@@ -5,7 +5,20 @@ import { ProductCard, ArrowDirection } from './components/ProductCard';
 
 function HeroImage() {
     const [card, setCard]: any = useState({
+        spotlightLeftZone: false,
+        tvSpeakerZone: false,
         tvDeviceZone: false,
+        tvThermostatZone: false,
+        bedroomLightZone: false,
+        bedroomTableZone: false,
+        spotlightRightZone: false,
+        outsideMotionSensorLeft: false,
+        kitchenTvZone: false,
+        doorKeypadZone: false,
+        doorLockZone: false,
+        garageWaterTankZone: false,
+        garageScreenZone: false,
+        outsideMotionSensorRight: false,
     });
 
     const toggle = (id: string) => {
@@ -48,7 +61,7 @@ function HeroImage() {
                             className="pulser"
                             key={x}
                             id={x}
-                            onClick={() => toggle('tvDeviceZone')}
+                            onClick={() => toggle(x)}
                         >
                             <Pulser />
                         </li>
