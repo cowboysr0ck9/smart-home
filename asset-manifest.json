@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/adi-global/static/css/main.3b1267ba.chunk.css",
+    "main.js": "/adi-global/static/js/main.68062d81.chunk.js",
+    "main.js.map": "/adi-global/static/js/main.68062d81.chunk.js.map",
+    "runtime-main.js": "/adi-global/static/js/runtime-main.90410c73.js",
+    "runtime-main.js.map": "/adi-global/static/js/runtime-main.90410c73.js.map",
+    "static/js/2.8726553b.chunk.js": "/adi-global/static/js/2.8726553b.chunk.js",
+    "static/js/2.8726553b.chunk.js.map": "/adi-global/static/js/2.8726553b.chunk.js.map",
+    "index.html": "/adi-global/index.html",
+    "precache-manifest.611502d4ab354efb46bf160013755976.js": "/adi-global/precache-manifest.611502d4ab354efb46bf160013755976.js",
+    "service-worker.js": "/adi-global/service-worker.js",
+    "static/css/main.3b1267ba.chunk.css.map": "/adi-global/static/css/main.3b1267ba.chunk.css.map",
+    "static/js/2.8726553b.chunk.js.LICENSE.txt": "/adi-global/static/js/2.8726553b.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/adi-global/static/media/map-base.db7d03de.jpg",
+    "static/media/times-circle-regular.svg": "/adi-global/static/media/times-circle-regular.7da18975.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90410c73.js",
+    "static/js/2.8726553b.chunk.js",
+    "static/css/main.3b1267ba.chunk.css",
+    "static/js/main.68062d81.chunk.js"
+  ]
+}
