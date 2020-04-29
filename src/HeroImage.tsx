@@ -33,6 +33,22 @@ function HeroImage() {
 
     return (
         <div id="homeMap">
+            <div className="adi-hero-lead--copy-holder">
+                <h2 className="adi-hero-lead--copy-title">
+                    Design the Ultimate<br></br>Connected Home.
+                </h2>
+                <p className="adi-hero-lead--copy-tagline">
+                    Become your customers’ No. 1 advisor on all things smart
+                    home
+                </p>
+                <p className="adi-hero-lead--copy-text">
+                    Explore how you can add smart home devices to your installs
+                    and customize set up to give your customers the technology
+                    they need for a unique, personalized and secure home
+                    experience
+                </p>
+            </div>
+
             <ul className="adi--card-list">
                 {PRODUCT_CARDS.map((c) => {
                     const {

@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-@-webkit-keyframes pulsate {
+@keyframes pulsate {
     0% {
         -webkit-transform: scale(0.1, 0.1);
         opacity: 0;
@@ -201,10 +201,11 @@ body {
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0;
-    padding: 8px 48px;
+    padding: 8px;
     display: inline-block;
     border: 2px solid #004da6;
     border-radius: 8px;
+    width: 100%;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -289,4 +290,37 @@ svg.pulse-svg .third-circle {
         transform: scale(5);
         opacity: 0;
     }
+}
+
+// Main Hero Copy Text
+.adi-hero-lead--copy-holder {
+    display: block;
+    position: absolute;
+    width: 371px;
+    top: 318px;
+    left: 40px;
+}
+
+.adi-hero-lead--copy-title {
+    color: #666666;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+.adi-hero-lead--copy-tagline {
+    color: #666666;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.adi-hero-lead--copy-text {
+    color: #666666;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
 }
