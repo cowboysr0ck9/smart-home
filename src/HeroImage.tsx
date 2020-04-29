@@ -33,7 +33,7 @@ function HeroImage() {
 
     return (
         <div id="homeMap">
-            <ul>
+            <ul className="adi--card-list">
                 {PRODUCT_CARDS.map((c) => {
                     const {
                         id,
