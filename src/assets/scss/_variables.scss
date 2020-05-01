@@ -324,3 +324,10 @@ svg.pulse-svg .third-circle {
     letter-spacing: 0;
     line-height: 24px;
 }
+
+// Hides Carousel On All Screens Except Mobile 500px
+@media screen and (min-width: 501px) {
+    .mobileHomeMap {
+        display: none;
+    }
+}

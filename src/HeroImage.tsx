@@ -3,6 +3,7 @@ import './assets/scss/main.scss';
 import { Pulser } from './components/Pulser';
 import { ProductCard } from './components/ProductCard';
 import { PRODUCT_CARDS, PULSE_DOTS } from './data';
+import { MobileCarousel } from './components/MobileCarousel';
 
 function HeroImage() {
     const [card, setCard]: any = useState({
@@ -32,72 +33,75 @@ function HeroImage() {
     };
 
     return (
-        <div id="homeMap">
-            <div className="adi-hero-lead--copy-holder">
-                <h2 className="adi-hero-lead--copy-title">
-                    Design the Ultimate<br></br>Connected Home.
-                </h2>
-                <p className="adi-hero-lead--copy-tagline">
-                    Become your customers’ No. 1 advisor on all things smart
-                    home
-                </p>
-                <p className="adi-hero-lead--copy-text">
-                    Explore how you can add smart home devices to your installs
-                    and customize set up to give your customers the technology
-                    they need for a unique, personalized and secure home
-                    experience
-                </p>
+        <>
+            <div id="homeMap">
+                <div className="adi-hero-lead--copy-holder">
+                    <h2 className="adi-hero-lead--copy-title">
+                        Design the Ultimate<br></br>Connected Home.
+                    </h2>
+                    <p className="adi-hero-lead--copy-tagline">
+                        Become your customers’ No. 1 advisor on all things smart
+                        home
+                    </p>
+                    <p className="adi-hero-lead--copy-text">
+                        Explore how you can add smart home devices to your
+                        installs and customize set up to give your customers the
+                        technology they need for a unique, personalized and
+                        secure home experience
+                    </p>
+                </div>
+
+                <ul className="adi--card-list">
+                    {PRODUCT_CARDS.map((c) => {
+                        const {
+                            id,
+                            arrowDirection,
+                            productImage,
+                            productImageAltText,
+                            productMetaLink,
+                            copy,
+                            productMetaLinkText,
+                            productMetaName,
+                            shopMoreBtn,
+                            shopMoreBtnLink,
+                            title,
+                        } = c;
+                        return (
+                            <li id={`${id}Card`} key={id} className="p-abs">
+                                <ProductCard
+                                    isOpen={card[id]}
+                                    arrowDirection={arrowDirection}
+                                    productImage={productImage}
+                                    productImageAltText={productImageAltText}
+                                    productMetaLink={productMetaLink}
+                                    onClose={() => toggle(id)}
+                                    copy={copy}
+                                    productMetaLinkText={productMetaLinkText}
+                                    productMetaName={productMetaName}
+                                    shopMoreBtn={shopMoreBtn}
+                                    shopMoreBtnLink={shopMoreBtnLink}
+                                    title={title}
+                                ></ProductCard>
+                            </li>
+                        );
+                    })}
+
+                    {PULSE_DOTS.map((x) => {
+                        return (
+                            <li
+                                className="pulser"
+                                key={x}
+                                id={x}
+                                onClick={() => toggle(x)}
+                            >
+                                <Pulser />
+                            </li>
+                        );
+                    })}
+                </ul>
             </div>
-
-            <ul className="adi--card-list">
-                {PRODUCT_CARDS.map((c) => {
-                    const {
-                        id,
-                        arrowDirection,
-                        productImage,
-                        productImageAltText,
-                        productMetaLink,
-                        copy,
-                        productMetaLinkText,
-                        productMetaName,
-                        shopMoreBtn,
-                        shopMoreBtnLink,
-                        title,
-                    } = c;
-                    return (
-                        <li id={`${id}Card`} key={id} className="p-abs">
-                            <ProductCard
-                                isOpen={card[id]}
-                                arrowDirection={arrowDirection}
-                                productImage={productImage}
-                                productImageAltText={productImageAltText}
-                                productMetaLink={productMetaLink}
-                                onClose={() => toggle(id)}
-                                copy={copy}
-                                productMetaLinkText={productMetaLinkText}
-                                productMetaName={productMetaName}
-                                shopMoreBtn={shopMoreBtn}
-                                shopMoreBtnLink={shopMoreBtnLink}
-                                title={title}
-                            ></ProductCard>
-                        </li>
-                    );
-                })}
-
-                {PULSE_DOTS.map((x) => {
-                    return (
-                        <li
-                            className="pulser"
-                            key={x}
-                            id={x}
-                            onClick={() => toggle(x)}
-                        >
-                            <Pulser />
-                        </li>
-                    );
-                })}
-            </ul>
-        </div>
+            <MobileCarousel />
+        </>
     );
 }
 
