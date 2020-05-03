@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Pulser = () => {
-    const PULSER_COLOR = '#FF6347';
+    const PULSER_COLOR = '#0673f1';
     return (
         <>
             <svg
