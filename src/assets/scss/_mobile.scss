@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .adi-tv-room {
@@ -25,4 +26,41 @@
 // Styles Selected Carousel Dot
 .dot.selected {
     background-color: #026ae1 !important;
+}
+
+// Allows Card to Overflow Carousel Container
+.carousel.carousel-slider {
+    overflow: visible;
+}
+
+// Allows Card to Overflow Carousel Container
+.carousel .slider-wrapper {
+    overflow: visible;
+}
+
+// Mobile L Breakpoint
+@media screen and (max-width: 425px) {
+    #spotlightLeftZone {
+        top: 48px;
+        left: 25px;
+        z-index: 100;
+    }
+}
+
+// Mobile M Breakpoint
+@media screen and (max-width: 375px) {
+    #spotlightLeftZone {
+        top: 80px;
+        left: 25px;
+        z-index: 100;
+    }
+}
+
+// Mobile SM Breakpoint
+@media screen and (max-width: 320px) {
+    #spotlightLeftZone {
+        top: 120px;
+        left: 25px;
+        z-index: 100;
+    }
 }
