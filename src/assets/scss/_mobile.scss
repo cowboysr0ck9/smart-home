@@ -1,0 +1,28 @@
+.adi-mobile-image {
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.adi-tv-room {
+    background-image: url('../images/fake-mobile.jpg');
+}
+
+// // Hide Status Indicator ex Slide 1 of 5
+// .carousel-status {
+//     display: none;
+// }
+
+// Styles All Carousel Slider Dots
+.carousel .control-dots .dot {
+    height: 16px !important;
+    width: 16px !important;
+    border: 1px solid #006ae3 !important;
+    opacity: 1 !important;
+}
+
+// Styles Selected Carousel Dot
+.dot.selected {
+    background-color: #026ae1 !important;
+}

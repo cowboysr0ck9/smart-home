@@ -4,15 +4,28 @@ import { Carousel } from 'react-responsive-carousel';
 
 export const MobileCarousel = () => {
     return (
-        <Carousel showThumbs={false} className="mobileHomeMap">
-            <div>
-                <img src="assets/1.jpeg" alt="image 1" />
+        <Carousel
+            autoPlay={true}
+            showThumbs={false}
+            showArrows={false}
+            showStatus={false}
+            onChange={() => console.log('Set All Cards to be removed')}
+            className="mobileHomeMap"
+        >
+            <div className="adi-mobile-image adi-tv-room">
+                {/* TV Room Pulsers & Cards */}
             </div>
-            <div>
-                <img src="assets/2.jpeg" alt="image 2" />
+            <div className="adi-mobile-image">
+                {/* Bedroom Pulsers & Cards */}
             </div>
-            <div>
-                <img src="assets/3.jpeg" alt="image 3" />
+            <div className="adi-mobile-image">
+                {/* Kitchen Pulsers & Cards */}
+            </div>
+            <div className="adi-mobile-image">
+                {/* Doors Pulsers & Cards */}
+            </div>
+            <div className="adi-mobile-image">
+                {/* Garage Pulsers & Cards */}
             </div>
         </Carousel>
     );
