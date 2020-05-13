@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './assets/scss/main.scss';
 import { Pulser } from './components/Pulser';
 import { ProductCard } from './components/ProductCard';
@@ -23,6 +23,8 @@ function HeroImage() {
         outsideMotionSensorRight: false,
     });
 
+    const [heroCardDisplay, setHeroCardDisplay]: any = useState(true);
+
     const toggle = (id: string) => {
         const clonedCardState = Object.assign({}, card);
         for (let c in clonedCardState) {
@@ -33,10 +35,25 @@ function HeroImage() {
         setCard({ ...card, [id]: !card[id] });
     };
 
+    // Hides Cards After 3 Seconds
+    useEffect(() => {
+        if (window.screen.width <= 1024) {
+            const timer = setTimeout(() => {
+                setHeroCardDisplay(!heroCardDisplay);
+            }, 5000);
+
+            return () => clearTimeout(timer);
+        }
+    }, []);
+
     return (
         <>
             <div id="homeMap">
-                <div className="adi-hero-lead--copy-holder">
+                <div
+                    className={`adi-hero-lead--copy-holder ${
+                        heroCardDisplay ? '' : 'js-d-none'
+                    }`}
+                >
                     <h2 className="adi-hero-lead--copy-title">
                         Design the Ultimate<br></br>Connected Home.
                     </h2>

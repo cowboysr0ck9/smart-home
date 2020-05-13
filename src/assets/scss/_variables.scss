@@ -292,8 +292,7 @@ svg.pulse-svg .third-circle {
     display: block;
     position: absolute;
     width: 371px;
-    top: 318px;
-    left: 40px;
+    top: 288px;
 }
 
 .adi-hero-lead--copy-title {
@@ -318,6 +317,21 @@ svg.pulse-svg .third-circle {
     font-size: 16px;
     letter-spacing: 0;
     line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .adi-hero-lead--copy-holder {
+        background-color: rgba(255, 255, 255, 0.85);
+        z-index: 3;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        left: 4%;
+        top: 380px;
+        transition: ease-in-out 0.3s;
+    }
+    .js-d-none {
+        display: none;
+    }
 }
 
 // Hides Carousel On All Screens Except Mobile 500px
