@@ -1,19 +1,17 @@
+.p-rel {
+    position: relative;
+}
 .adi-mobile-image {
     height: 280px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
+// Card Background Images
 .adi-tv-room {
     background-image: url('../images/fake-mobile.jpg');
 }
-
-// // Hide Status Indicator ex Slide 1 of 5
-// .carousel-status {
-//     display: none;
-// }
 
 // Styles All Carousel Slider Dots
 .carousel .control-dots .dot {
@@ -30,12 +28,12 @@
 
 // Allows Card to Overflow Carousel Container
 .carousel.carousel-slider {
-    overflow: visible;
+    overflow: visible !important;
 }
 
 // Allows Card to Overflow Carousel Container
 .carousel .slider-wrapper {
-    overflow: visible;
+    overflow: visible !important;
 }
 
 // Mobile L Breakpoint

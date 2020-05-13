@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { PRODUCT_CARDS, PULSE_DOTS } from '../data';
+import { PRODUCT_CARDS, ADI_ROOM_FILTER } from '../data';
 import { ProductCard } from './ProductCard';
 import { Pulser } from './Pulser';
 
@@ -32,78 +32,128 @@ export const MobileCarousel = () => {
         setCard({ ...card, [id]: !card[id] });
     };
 
+    const hideAllCards = () => {
+        const clonedCardState = Object.assign({}, card);
+        for (let c in clonedCardState) {
+            card[c] = false;
+        }
+        setCard({ ...card, ...clonedCardState });
+    };
+
     return (
         <Carousel
             // autoPlay={true}
             showThumbs={false}
             showArrows={false}
             showStatus={false}
-            onChange={() => console.log('Set All Cards to be removed')}
+            onChange={hideAllCards}
             className="mobileHomeMap"
         >
             <div className="adi-mobile-image adi-tv-room">
                 {/* TV Room Pulsers & Cards */}
-                <ul className="adi--card-list">
-                    {PRODUCT_CARDS.map((c) => {
-                        const {
-                            id,
-                            arrowDirection,
-                            productImage,
-                            productImageAltText,
-                            productMetaLink,
-                            copy,
-                            productMetaLinkText,
-                            productMetaName,
-                            shopMoreBtn,
-                            shopMoreBtnLink,
-                            title,
-                        } = c;
-                        return (
-                            <li id={`${id}Card`} key={id} className="p-abs">
-                                <ProductCard
-                                    isOpen={card[id]}
-                                    arrowDirection={arrowDirection}
-                                    productImage={productImage}
-                                    productImageAltText={productImageAltText}
-                                    productMetaLink={productMetaLink}
-                                    onClose={() => toggle(id)}
-                                    copy={copy}
-                                    productMetaLinkText={productMetaLinkText}
-                                    productMetaName={productMetaName}
-                                    shopMoreBtn={shopMoreBtn}
-                                    shopMoreBtnLink={shopMoreBtnLink}
-                                    title={title}
-                                ></ProductCard>
-                            </li>
-                        );
-                    })}
-
-                    {PULSE_DOTS.map((x) => {
-                        return (
-                            <li
-                                className="pulser"
-                                key={x}
-                                id={x}
-                                onClick={() => toggle(x)}
-                            >
-                                <Pulser />
-                            </li>
-                        );
-                    })}
-                </ul>
+                {populateSlider(ADI_ROOM_FILTER.TVROOM, card, toggle, [
+                    'tvSpeakerZone',
+                    'tvDeviceZone',
+                    'tvThermostatZone',
+                ])}
             </div>
             <div className="adi-mobile-image">
                 {/* Bedroom Pulsers & Cards */}
+                {populateSlider(ADI_ROOM_FILTER.BEDROOM, card, toggle, [
+                    'bedroomLightZone',
+                    'bedroomTableZone',
+                ])}
             </div>
             <div className="adi-mobile-image">
                 {/* Kitchen Pulsers & Cards */}
+                {populateSlider(ADI_ROOM_FILTER.KITCHEN, card, toggle, [
+                    'kitchenTvZone',
+                ])}
             </div>
             <div className="adi-mobile-image">
                 {/* Doors Pulsers & Cards */}
+                {populateSlider(ADI_ROOM_FILTER.DOOR, card, toggle, [
+                    'doorKeypadZone',
+                    'doorLockZone',
+                ])}
             </div>
             <div className="adi-mobile-image">
                 {/* Garage Pulsers & Cards */}
+                {populateSlider(ADI_ROOM_FILTER.GARAGE, card, toggle, [
+                    'garageWaterTankZone',
+                    'garageScreenZone',
+                ])}
+            </div>
+
+            <div className="adi-mobile-image">
+                {/* Spotlight & Motion Sensors*/}
+                {populateSlider(ADI_ROOM_FILTER.SPOTLIGHT, card, toggle, [
+                    'spotlightLeftZone',
+                    'spotlightRightZone',
+                    'outsideMotionSensorLeft',
+                    'outsideMotionSensorRight',
+                ])}
             </div>
         </Carousel>
+    );
+};
+
+const populateSlider = (
+    filterKey: ADI_ROOM_FILTER,
+    cardState: any,
+    onClose: Function,
+    pulserIds: string[]
+) => {
+    return (
+        <ul className="p-rel adi--card-list">
+            {PRODUCT_CARDS.filter((c) => c.roomForMobileCard === filterKey).map(
+                (c) => {
+                    const {
+                        id,
+                        arrowDirection,
+                        productImage,
+                        productImageAltText,
+                        productMetaLink,
+                        copy,
+                        productMetaLinkText,
+                        productMetaName,
+                        shopMoreBtn,
+                        shopMoreBtnLink,
+                        title,
+                    } = c;
+                    return (
+                        <li id={`${id}Card`} key={id} className="p-abs">
+                            <ProductCard
+                                isOpen={cardState[id]}
+                                arrowDirection={arrowDirection}
+                                productImage={productImage}
+                                productImageAltText={productImageAltText}
+                                productMetaLink={productMetaLink}
+                                onClose={() => onClose(id)}
+                                copy={copy}
+                                productMetaLinkText={productMetaLinkText}
+                                productMetaName={productMetaName}
+                                shopMoreBtn={shopMoreBtn}
+                                shopMoreBtnLink={shopMoreBtnLink}
+                                title={title}
+                            ></ProductCard>
+                        </li>
+                    );
+                }
+            )}
+
+            {[...pulserIds].map((x) => {
+                return (
+                    <li
+                        className="pulser"
+                        key={x}
+                        id={x}
+                        onClick={() => onClose(x)}
+                    >
+                        <Pulser />
+                    </li>
+                );
+            })}
+        </ul>
     );
 };
