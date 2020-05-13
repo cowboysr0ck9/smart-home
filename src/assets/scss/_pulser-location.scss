@@ -216,6 +216,79 @@
 }
 
 // Mobile L Pulse Locations
+@media screen and (max-width: 500px) {
+    #spotlightLeftZone {
+        top: 68px;
+        left: 65px;
+    }
+
+    #tvSpeakerZone {
+        top: 157px;
+        left: 112px;
+    }
+
+    #tvDeviceZone {
+        top: 40px;
+        left: 170px;
+    }
+
+    #tvThermostatZone {
+        top: 64px;
+        left: 396px;
+    }
+
+    #bedroomLightZone {
+        top: 80px;
+        left: 73px;
+    }
+
+    #bedroomTableZone {
+        top: 136px;
+        left: 375px;
+    }
+
+    #spotlightRightZone {
+        top: 329px;
+        left: 607px;
+    }
+
+    #outsideMotionSensorLeft {
+        top: 31px;
+        left: 222px;
+    }
+
+    #kitchenTvZone {
+        top: 111px;
+        left: 193px;
+    }
+
+    #doorKeypadZone {
+        top: 117px;
+        left: 127px;
+    }
+
+    #doorLockZone {
+        top: 156px;
+        left: 169px;
+    }
+
+    #garageWaterTankZone {
+        top: 87px;
+        left: 332px;
+    }
+
+    #garageScreenZone {
+        top: 84px;
+        left: 400px;
+    }
+
+    #outsideMotionSensorRight {
+        top: 519px;
+        left: 716px;
+    }
+}
+
+// Mobile L Pulse Locations
 @media screen and (max-width: 425px) {
     #spotlightLeftZone {
         top: 78px;

@@ -50,41 +50,14 @@
     background-color: #026ae1 !important;
 }
 
-// Allows Card to Overflow Carousel Container
-.carousel.carousel-slider {
-    overflow: visible !important;
-    overflow-x: hidden;
-}
+// // Allows Card to Overflow Carousel Container
+// .carousel.carousel-slider {
+//     overflow: visible !important;
+//     overflow-x: hidden;
+// }
 
-// Allows Card to Overflow Carousel Container
-.carousel .slider-wrapper {
-    overflow: visible !important;
-    overflow-x: hidden;
-}
-
-// Mobile L Breakpoint
-@media screen and (max-width: 425px) {
-    #spotlightLeftZone {
-        top: 48px;
-        left: 25px;
-        z-index: 100;
-    }
-}
-
-// Mobile M Breakpoint
-@media screen and (max-width: 375px) {
-    #spotlightLeftZone {
-        top: 80px;
-        left: 25px;
-        z-index: 100;
-    }
-}
-
-// Mobile SM Breakpoint
-@media screen and (max-width: 320px) {
-    #spotlightLeftZone {
-        top: 120px;
-        left: 25px;
-        z-index: 100;
-    }
-}
+// // Allows Card to Overflow Carousel Container
+// .carousel .slider-wrapper {
+//     overflow: visible !important;
+//     overflow-x: hidden;
+// }
