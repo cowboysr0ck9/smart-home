@@ -46,10 +46,6 @@ body {
 
 /* Laptop */
 @media screen and (max-width: 1024px) {
-    body {
-        background-color: purple;
-    }
-
     #homeMap {
         position: relative;
         display: block;
@@ -62,10 +58,6 @@ body {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-    body {
-        background-color: green;
-    }
-
     #homeMap {
         position: relative;
         display: block;
@@ -78,10 +70,6 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 500px) {
-    body {
-        background-color: rgb(0, 255, 8);
-    }
-
     #homeMap {
         display: none;
     }
