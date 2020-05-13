@@ -26,6 +26,7 @@ function HeroImage() {
     const toggle = (id: string) => {
         const clonedCardState = Object.assign({}, card);
         for (let c in clonedCardState) {
+            /* eslint-disable no-self-assign */
             c === id ? (card[c] = card[c]) : (card[c] = false);
         }
         setCard({ ...card, ...clonedCardState });

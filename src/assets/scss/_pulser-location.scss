@@ -360,3 +360,76 @@
         left: 716px;
     }
 }
+
+// Mobile M Pulse Locations
+@media screen and (max-width: 375px) {
+    #spotlightLeftZone {
+        top: 78px;
+        left: 45px;
+    }
+
+    #tvSpeakerZone {
+        top: 147px;
+        left: 82px;
+    }
+
+    #tvDeviceZone {
+        top: 57px;
+        left: 120px;
+    }
+
+    #tvThermostatZone {
+        top: 74px;
+        left: 297px;
+    }
+
+    #bedroomLightZone {
+        top: 80px;
+        left: 49px;
+    }
+
+    #bedroomTableZone {
+        top: 136px;
+        left: 266px;
+    }
+
+    #spotlightRightZone {
+        top: 329px;
+        left: 607px;
+    }
+
+    #outsideMotionSensorLeft {
+        top: 41px;
+        left: 162px;
+    }
+
+    #kitchenTvZone {
+        top: 111px;
+        left: 163px;
+    }
+
+    #doorKeypadZone {
+        top: 97px;
+        left: 96px;
+    }
+
+    #doorLockZone {
+        top: 136px;
+        left: 139px;
+    }
+
+    #garageWaterTankZone {
+        top: 97px;
+        left: 240px;
+    }
+
+    #garageScreenZone {
+        top: 86px;
+        left: 290px;
+    }
+
+    #outsideMotionSensorRight {
+        top: 519px;
+        left: 716px;
+    }
+}

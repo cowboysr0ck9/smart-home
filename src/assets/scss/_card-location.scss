@@ -289,71 +289,143 @@
 // Mobile L Card Locations
 @media screen and (max-width: 425px) {
     #spotlightLeftZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
     #tvSpeakerZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #tvDeviceZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #tvThermostatZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #bedroomLightZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #bedroomTableZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #spotlightRightZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #outsideMotionSensorLeftCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #kitchenTvZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #doorKeypadZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #doorLockZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #garageWaterTankZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #garageScreenZoneCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
     }
 
     #outsideMotionSensorRightCard {
-        top: 42px;
-        left: 65px;
+        top: 32px;
+        left: 12%;
+    }
+}
+
+// Mobile S Card Locations
+@media screen and (max-width: 320px) {
+    #spotlightLeftZoneCard {
+        top: 32px;
+        left: 0;
+    }
+    #tvSpeakerZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #tvDeviceZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #tvThermostatZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #bedroomLightZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #bedroomTableZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #spotlightRightZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #outsideMotionSensorLeftCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #kitchenTvZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #doorKeypadZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #doorLockZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #garageWaterTankZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #garageScreenZoneCard {
+        top: 32px;
+        left: 0;
+    }
+
+    #outsideMotionSensorRightCard {
+        top: 32px;
+        left: 0;
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { PRODUCT_CARDS, ADI_ROOM_FILTER } from '../data';
+import { PRODUCT_CARDS } from '../data';
 import { ProductCard } from './ProductCard';
 import { Pulser } from './Pulser';
 
@@ -26,6 +26,7 @@ export const MobileCarousel = () => {
     const toggle = (id: string) => {
         const clonedCardState = Object.assign({}, card);
         for (let c in clonedCardState) {
+            /* eslint-disable no-self-assign */
             c === id ? (card[c] = card[c]) : (card[c] = false);
         }
         setCard({ ...card, ...clonedCardState });
