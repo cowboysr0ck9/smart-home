@@ -1,73 +1,287 @@
-.p-abs {
-    position: absolute;
+// Desktop Card Locations
+#spotlightLeftZoneCard {
+    top: 122px;
+    left: 400px;
+}
+#tvSpeakerZoneCard {
+    top: 261px;
+    left: 561px;
 }
 
 #tvDeviceZoneCard {
-    top: 278px;
-    left: 630px;
-}
-
-#tvSpeakerZoneCard {
-    top: 351px;
-    left: 580px;
-}
-
-#spotlightLeftZoneCard {
-    top: 224px;
-    left: 470px;
-}
-
-#outsideMotionSensorLeftCard {
-    top: 454px;
-    left: 480px;
-}
-
-#kitchenTvZoneCard {
-    top: 500px;
-    left: 580px;
+    top: 189px;
+    left: 572px;
 }
 
 #tvThermostatZoneCard {
-    top: 290px;
-    left: 740px;
+    top: 202px;
+    left: 730px;
 }
 
 #bedroomLightZoneCard {
-    top: 306px;
-    left: 900px;
-}
-
-#doorLockZoneCard {
-    top: 505px;
-    left: 778px;
-}
-
-#doorKeypadZoneCard {
-    top: 499px;
-    left: 747px;
+    top: 216px;
+    left: 958px;
 }
 
 #bedroomTableZoneCard {
-    top: 334px;
-    left: 668px;
+    top: 264px;
+    left: 768px;
 }
 
 #spotlightRightZoneCard {
-    top: 230px;
-    left: 770px;
+    top: 122px;
+    left: 920px;
+}
+
+#outsideMotionSensorLeftCard {
+    top: 414px;
+    left: 417px;
+}
+
+#kitchenTvZoneCard {
+    top: 471px;
+    left: 550px;
+}
+
+#doorKeypadZoneCard {
+    top: 470px;
+    left: 784px;
+}
+
+#doorLockZoneCard {
+    top: 494px;
+    left: 817px;
 }
 
 #garageWaterTankZoneCard {
-    top: 468px;
-    left: 840px;
+    top: 445px;
+    left: 972px;
 }
 
 #garageScreenZoneCard {
-    top: 486px;
-    left: 864px;
+    top: 466px;
+    left: 1020px;
 }
 
 #outsideMotionSensorRightCard {
-    top: 454px;
-    left: 894px;
+    top: 412px;
+    left: 1056px;
+}
+
+// Laptop Card Locations
+@media screen and (max-width: 1024px) {
+    #spotlightLeftZoneCard {
+        top: 168px;
+        left: 70px;
+    }
+
+    #tvSpeakerZoneCard {
+        top: 296px;
+        left: 207px;
+    }
+
+    #tvDeviceZoneCard {
+        top: 228px;
+        left: 240px;
+    }
+
+    #tvThermostatZoneCard {
+        top: 235px;
+        left: 384px;
+    }
+
+    #bedroomLightZoneCard {
+        top: 246px;
+        left: 576px;
+    }
+
+    #bedroomTableZoneCard {
+        top: 288px;
+        left: 362px;
+    }
+
+    #spotlightRightZoneCard {
+        top: 171px;
+        left: 496px;
+    }
+
+    #outsideMotionSensorLeftCard {
+        top: 434px;
+        left: 82px;
+    }
+
+    #kitchenTvZoneCard {
+        top: 491px;
+        left: 206px;
+    }
+
+    #doorKeypadZoneCard {
+        top: 480px;
+        left: 410px;
+    }
+
+    #doorLockZoneCard {
+        top: 503px;
+        left: 454px;
+    }
+
+    #garageWaterTankZoneCard {
+        top: 464px;
+        left: 548px;
+    }
+
+    #garageScreenZoneCard {
+        top: 466px;
+        left: 591px;
+    }
+
+    #outsideMotionSensorRightCard {
+        top: 436px;
+        left: 642px;
+    }
+}
+
+// Tablet Card Locations
+@media screen and (max-width: 768px) {
+    #spotlightLeftZoneCard {
+        top: 279px;
+        left: 68px;
+    }
+
+    #tvSpeakerZoneCard {
+        top: 372px;
+        left: 165px;
+    }
+
+    #tvDeviceZoneCard {
+        top: 317px;
+        left: 199px;
+    }
+
+    #tvThermostatZoneCard {
+        top: 323px;
+        left: 302px;
+    }
+
+    #bedroomLightZoneCard {
+        top: 335px;
+        left: 436px;
+    }
+
+    #bedroomTableZoneCard {
+        top: 366px;
+        left: 182px;
+    }
+
+    #spotlightRightZoneCard {
+        top: 282px;
+        left: 286px;
+    }
+
+    #outsideMotionSensorLeftCard {
+        top: 473px;
+        left: 66px;
+    }
+
+    #kitchenTvZoneCard {
+        top: 511px;
+        left: 166px;
+    }
+
+    #doorKeypadZoneCard {
+        top: 509px;
+        left: 314px;
+    }
+
+    #doorLockZoneCard {
+        top: 529px;
+        left: 342px;
+    }
+
+    #garageWaterTankZoneCard {
+        top: 496px;
+        left: 320px;
+    }
+
+    #garageScreenZoneCard {
+        top: 492px;
+        left: 361px;
+    }
+
+    #outsideMotionSensorRightCard {
+        top: 468px;
+        left: 394px;
+    }
+}
+
+// Mobile L Card Locations
+@media screen and (max-width: 425px) {
+    #spotlightLeftZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+    #tvSpeakerZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #tvDeviceZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #tvThermostatZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #bedroomLightZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #bedroomTableZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #spotlightRightZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #outsideMotionSensorLeftCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #kitchenTvZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #doorKeypadZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #doorLockZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #garageWaterTankZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #garageScreenZoneCard {
+        top: 42px;
+        left: 65px;
+    }
+
+    #outsideMotionSensorRightCard {
+        top: 42px;
+        left: 65px;
+    }
 }

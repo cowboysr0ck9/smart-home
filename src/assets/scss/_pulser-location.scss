@@ -214,3 +214,76 @@
         left: 716px;
     }
 }
+
+// Mobile L Pulse Locations
+@media screen and (max-width: 425px) {
+    #spotlightLeftZone {
+        top: 78px;
+        left: 45px;
+    }
+
+    #tvSpeakerZone {
+        top: 157px;
+        left: 92px;
+    }
+
+    #tvDeviceZone {
+        top: 54px;
+        left: 140px;
+    }
+
+    #tvThermostatZone {
+        top: 74px;
+        left: 338px;
+    }
+
+    #bedroomLightZone {
+        top: 90px;
+        left: 58px;
+    }
+
+    #bedroomTableZone {
+        top: 136px;
+        left: 316px;
+    }
+
+    #spotlightRightZone {
+        top: 329px;
+        left: 607px;
+    }
+
+    #outsideMotionSensorLeft {
+        top: 31px;
+        left: 192px;
+    }
+
+    #kitchenTvZone {
+        top: 111px;
+        left: 163px;
+    }
+
+    #doorKeypadZone {
+        top: 97px;
+        left: 96px;
+    }
+
+    #doorLockZone {
+        top: 136px;
+        left: 139px;
+    }
+
+    #garageWaterTankZone {
+        top: 87px;
+        left: 282px;
+    }
+
+    #garageScreenZone {
+        top: 84px;
+        left: 340px;
+    }
+
+    #outsideMotionSensorRight {
+        top: 519px;
+        left: 716px;
+    }
+}

@@ -116,6 +116,9 @@ body {
     right: -9px;
     top: 64px;
 }
+.p-abs {
+    position: absolute;
+}
 
 .adi-hero-card {
     background-color: white;
@@ -128,6 +131,7 @@ body {
     padding: 16px;
     border-radius: 12px;
     will-change: filter;
+    text-align: left;
     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
     /* IE11 Fallback */
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
@@ -142,6 +146,7 @@ body {
 
 .adi-hero-card--btn-close img {
     height: 18px;
+    width: 18px !important;
     cursor: pointer;
 }
 

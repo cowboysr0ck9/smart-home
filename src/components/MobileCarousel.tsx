@@ -89,7 +89,6 @@ export const MobileCarousel = () => {
                 {/* Spotlight & Motion Sensors*/}
                 {populateSlider(ADI_ROOM_FILTER.OUTDOOR, card, toggle, [
                     'outsideMotionSensorLeft',
-                    'outsideMotionSensorRight',
                 ])}
             </div>
 
@@ -97,7 +96,6 @@ export const MobileCarousel = () => {
                 {/* Spotlight & Motion Sensors*/}
                 {populateSlider(ADI_ROOM_FILTER.ROOF, card, toggle, [
                     'spotlightLeftZone',
-                    'spotlightRightZone',
                 ])}
             </div>
         </Carousel>
