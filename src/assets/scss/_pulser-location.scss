@@ -1,69 +1,216 @@
+// Desktop Pulse Locations
 #spotlightLeftZone {
-    top: 270px;
-    left: 412px;
+    top: 172px;
+    left: 332px;
 }
 
 #tvSpeakerZone {
-    top: 401px;
-    left: 530px;
+    top: 311px;
+    left: 496px;
 }
 
 #tvDeviceZone {
-    top: 327px;
-    left: 580px;
+    top: 237px;
+    left: 510px;
 }
 
 #tvThermostatZone {
-    top: 340px;
-    left: 676px;
+    top: 250px;
+    left: 666px;
 }
 
 #bedroomLightZone {
-    top: 356px;
-    left: 842px;
+    top: 264px;
+    left: 896px;
 }
 
 #bedroomTableZone {
-    top: 382px;
-    left: 986px;
+    top: 312px;
+    left: 1086px;
 }
 
 #spotlightRightZone {
-    top: 279px;
-    left: 1092px;
+    top: 169px;
+    left: 1242px;
 }
 
 #outsideMotionSensorLeft {
-    top: 504px;
-    left: 420px;
+    top: 464px;
+    left: 350px;
 }
 
 #kitchenTvZone {
-    top: 549px;
-    left: 526px;
+    top: 523px;
+    left: 490px;
 }
 
 #doorKeypadZone {
-    top: 540px;
-    left: 698px;
+    top: 518px;
+    left: 728px;
 }
 
 #doorLockZone {
-    top: 560px;
-    left: 723px;
+    top: 541px;
+    left: 763px;
 }
 
 #garageWaterTankZone {
-    top: 515px;
-    left: 1156px;
+    top: 493px;
+    left: 1296px;
 }
 
 #garageScreenZone {
-    top: 534px;
-    left: 1181px;
+    top: 514px;
+    left: 1341px;
 }
 
 #outsideMotionSensorRight {
-    top: 504px;
-    left: 1210px;
+    top: 460px;
+    left: 1380px;
+}
+
+// Laptop Pulse Locations
+@media screen and (max-width: 1024px) {
+    #spotlightLeftZone {
+        top: 217px;
+        left: 5px;
+    }
+
+    #tvSpeakerZone {
+        top: 345px;
+        left: 150px;
+    }
+
+    #tvDeviceZone {
+        top: 279px;
+        left: 180px;
+    }
+
+    #tvThermostatZone {
+        top: 285px;
+        left: 325px;
+    }
+
+    #bedroomLightZone {
+        top: 298px;
+        left: 515px;
+    }
+
+    #bedroomTableZone {
+        top: 336px;
+        left: 686px;
+    }
+
+    #spotlightRightZone {
+        top: 218px;
+        left: 822px;
+    }
+
+    #outsideMotionSensorLeft {
+        top: 484px;
+        left: 20px;
+    }
+
+    #kitchenTvZone {
+        top: 539px;
+        left: 148px;
+    }
+
+    #doorKeypadZone {
+        top: 529px;
+        left: 358px;
+    }
+
+    #doorLockZone {
+        top: 550px;
+        left: 393px;
+    }
+
+    #garageWaterTankZone {
+        top: 515px;
+        left: 873px;
+    }
+
+    #garageScreenZone {
+        top: 514px;
+        left: 919px;
+    }
+
+    #outsideMotionSensorRight {
+        top: 484px;
+        left: 967px;
+    }
+}
+
+// Tablet Pulse Locations
+@media screen and (max-width: 768px) {
+    #spotlightLeftZone {
+        top: 331px;
+        left: 4px;
+    }
+
+    #tvSpeakerZone {
+        top: 421px;
+        left: 105px;
+    }
+
+    #tvDeviceZone {
+        top: 368px;
+        left: 140px;
+    }
+
+    #tvThermostatZone {
+        top: 374px;
+        left: 240px;
+    }
+
+    #bedroomLightZone {
+        top: 386px;
+        left: 380px;
+    }
+
+    #bedroomTableZone {
+        top: 417px;
+        left: 505px;
+    }
+
+    #spotlightRightZone {
+        top: 329px;
+        left: 607px;
+    }
+
+    #outsideMotionSensorLeft {
+        top: 521px;
+        left: 2px;
+    }
+
+    #kitchenTvZone {
+        top: 561px;
+        left: 103px;
+    }
+
+    #doorKeypadZone {
+        top: 557px;
+        left: 262px;
+    }
+
+    #doorLockZone {
+        top: 577px;
+        left: 289px;
+    }
+
+    #garageWaterTankZone {
+        top: 547px;
+        left: 642px;
+    }
+
+    #garageScreenZone {
+        top: 543px;
+        left: 679px;
+    }
+
+    #outsideMotionSensorRight {
+        top: 519px;
+        left: 716px;
+    }
 }

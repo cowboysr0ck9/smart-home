@@ -23,18 +23,6 @@ body {
     }
 }
 
-#homeMap {
-    position: relative;
-    display: block;
-    background-image: url('../images/map-base.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 690px;
-    width: 1440px;
-    margin: 0 auto;
-    background-color: white;
-}
-
 .adi--card-list {
     list-style: none;
 }
@@ -42,6 +30,18 @@ body {
 .js-card-display {
     display: none;
     transition: all 0.3s ease-in-out;
+}
+
+#homeMap {
+    position: relative;
+    display: block;
+    background-image: url('../images/smart-home/ADI-Smart-1600.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 690px;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 /* Laptop */
@@ -53,6 +53,7 @@ body {
     #homeMap {
         position: relative;
         display: block;
+        background-image: url('../images/smart-home/ADI-Smart-1024.png');
         background-position: 80% bottom;
         background-repeat: no-repeat;
         width: 1024px;
@@ -68,8 +69,8 @@ body {
     #homeMap {
         position: relative;
         display: block;
-        background-position: 78% bottom;
-        background-size: 150%;
+        background-image: url('../images/smart-home/ADI-Smart-768.png');
+        background-position: 80% bottom;
         background-repeat: no-repeat;
         width: 768px;
     }

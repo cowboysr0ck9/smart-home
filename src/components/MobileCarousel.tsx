@@ -49,7 +49,7 @@ export const MobileCarousel = () => {
             onChange={hideAllCards}
             className="mobileHomeMap"
         >
-            <div className="adi-mobile-image adi-tv-room">
+            <div className="adi-mobile-image adi-smart-livingroom-bg">
                 {/* TV Room Pulsers & Cards */}
                 {populateSlider(ADI_ROOM_FILTER.TVROOM, card, toggle, [
                     'tvSpeakerZone',
@@ -57,27 +57,27 @@ export const MobileCarousel = () => {
                     'tvThermostatZone',
                 ])}
             </div>
-            <div className="adi-mobile-image">
+            <div className="adi-mobile-image adi-smart-bedroom-bg">
                 {/* Bedroom Pulsers & Cards */}
                 {populateSlider(ADI_ROOM_FILTER.BEDROOM, card, toggle, [
                     'bedroomLightZone',
                     'bedroomTableZone',
                 ])}
             </div>
-            <div className="adi-mobile-image">
+            <div className="adi-mobile-image adi-smart-kitchen-bg">
                 {/* Kitchen Pulsers & Cards */}
                 {populateSlider(ADI_ROOM_FILTER.KITCHEN, card, toggle, [
                     'kitchenTvZone',
                 ])}
             </div>
-            <div className="adi-mobile-image">
+            <div className="adi-mobile-image adi-smart-door-bg">
                 {/* Doors Pulsers & Cards */}
                 {populateSlider(ADI_ROOM_FILTER.DOOR, card, toggle, [
                     'doorKeypadZone',
                     'doorLockZone',
                 ])}
             </div>
-            <div className="adi-mobile-image">
+            <div className="adi-mobile-image adi-smart-garage-bg">
                 {/* Garage Pulsers & Cards */}
                 {populateSlider(ADI_ROOM_FILTER.GARAGE, card, toggle, [
                     'garageWaterTankZone',
@@ -85,13 +85,19 @@ export const MobileCarousel = () => {
                 ])}
             </div>
 
-            <div className="adi-mobile-image">
+            <div className="adi-mobile-image adi-smart-outdoor-bg">
                 {/* Spotlight & Motion Sensors*/}
-                {populateSlider(ADI_ROOM_FILTER.SPOTLIGHT, card, toggle, [
-                    'spotlightLeftZone',
-                    'spotlightRightZone',
+                {populateSlider(ADI_ROOM_FILTER.OUTDOOR, card, toggle, [
                     'outsideMotionSensorLeft',
                     'outsideMotionSensorRight',
+                ])}
+            </div>
+
+            <div className="adi-mobile-image adi-smart-roof-bg">
+                {/* Spotlight & Motion Sensors*/}
+                {populateSlider(ADI_ROOM_FILTER.ROOF, card, toggle, [
+                    'spotlightLeftZone',
+                    'spotlightRightZone',
                 ])}
             </div>
         </Carousel>

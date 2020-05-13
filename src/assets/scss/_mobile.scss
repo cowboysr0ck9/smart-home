@@ -8,9 +8,33 @@
     background-size: cover;
 }
 
-// Card Background Images
-.adi-tv-room {
-    background-image: url('../images/fake-mobile.jpg');
+// Slider Background Images
+.adi-smart-roof-bg {
+    background-image: url('../images/mobile/ADI-Smart-roof-375x300.png');
+}
+
+.adi-smart-bedroom-bg {
+    background-image: url('../images/mobile/ADI-Smart-Bedroom-375x300.png');
+}
+
+.adi-smart-door-bg {
+    background-image: url('../images/mobile/ADI-Smart-Door-375x300.png');
+}
+
+.adi-smart-garage-bg {
+    background-image: url('../images/mobile/ADI-Smart-Garage-375x300.png');
+}
+
+.adi-smart-kitchen-bg {
+    background-image: url('../images/mobile/ADI-Smart-Kitchen-375x300.png');
+}
+
+.adi-smart-livingroom-bg {
+    background-image: url('../images/mobile/ADI-Smart-livingroom-375x300.png');
+}
+
+.adi-smart-outdoor-bg {
+    background-image: url('../images/mobile/ADI-Smart-Outdoor-375x300.png');
 }
 
 // Styles All Carousel Slider Dots
@@ -29,11 +53,13 @@
 // Allows Card to Overflow Carousel Container
 .carousel.carousel-slider {
     overflow: visible !important;
+    overflow-x: hidden;
 }
 
 // Allows Card to Overflow Carousel Container
 .carousel .slider-wrapper {
     overflow: visible !important;
+    overflow-x: hidden;
 }
 
 // Mobile L Breakpoint
