@@ -37,13 +37,11 @@ function HeroImage() {
 
     // Hides Cards After 3 Seconds
     useEffect(() => {
-        if (window.screen.width <= 1024) {
-            const timer = setTimeout(() => {
-                setHeroCardDisplay(!heroCardDisplay);
-            }, 5000);
+        const timer = setInterval(function () {
+            setHeroCardDisplay(false);
+        }, 5500);
 
-            return () => clearTimeout(timer);
-        }
+        return () => clearInterval(timer);
     }, []);
 
     return (
