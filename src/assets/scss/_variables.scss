@@ -37,9 +37,10 @@ body {
     display: block;
     background-image: url('../images/smart-home/ADI-Smart-1600.png');
     background-position: bottom;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 690px;
-    width: 1440px;
+    width: 1280px;
     margin: 0 auto;
     background-color: white;
 }
@@ -291,8 +292,9 @@ svg.pulse-svg .third-circle {
 .adi-hero-lead--copy-holder {
     display: block;
     position: absolute;
-    width: 371px;
-    top: 288px;
+    width: 320px;
+    left: 24px;
+    top: 318px;
 }
 
 .adi-hero-lead--copy-title {
