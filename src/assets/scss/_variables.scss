@@ -1,13 +1,6 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-body {
-    overflow-x: hidden;
-}
+// Define Brand Variables
+$adi-primary: #0673f1;
+$adi-white: #fff;
 
 @keyframes pulsate {
     0% {
@@ -42,7 +35,7 @@ body {
     height: 690px;
     width: 1280px;
     margin: 0 auto;
-    background-color: white;
+    background-color: $adi-white;
 }
 
 /* Laptop */
@@ -87,7 +80,7 @@ body {
 .card-arrow--left {
     height: 18px;
     width: 18px;
-    background-color: #ffffff;
+    background-color: $adi-white;
     position: absolute;
     z-index: 19;
     transform: rotate(45deg);
@@ -98,7 +91,7 @@ body {
 .card-arrow--right {
     height: 18px;
     width: 18px;
-    background-color: #ffffff;
+    background-color: $adi-white;
     position: absolute;
     z-index: 19;
     transform: rotate(45deg);
@@ -110,7 +103,7 @@ body {
 }
 
 .adi-hero-card {
-    background-color: white;
+    background-color: $adi-white;
     display: flex;
     flex-direction: column;
     width: 309px;
@@ -207,7 +200,7 @@ body {
 }
 
 .adi-hero-card--shop-more-link:hover {
-    color: #fff;
+    color: $adi-white;
     background-color: #133dac;
     border: 2px solid #004da6;
 }
@@ -230,7 +223,7 @@ svg.pulse-svg {
 svg.pulse-svg .first-circle,
 svg.pulse-svg .second-circle,
 svg.pulse-svg .third-circle {
-    fill: #0673f1;
+    fill: $adi-primary;
     transform: scale(0.5);
     transform-origin: center center;
     animation: pulse-me 3s linear infinite;
@@ -247,7 +240,7 @@ svg.pulse-svg .third-circle {
     width: 16px;
     height: 16px;
     border-radius: 8px;
-    background: #0673f1;
+    background: $adi-primary;
     position: relative;
 }
 .pulse-css:before,
@@ -256,7 +249,7 @@ svg.pulse-svg .third-circle {
     width: 16px;
     height: 16px;
     border-radius: 8px;
-    background-color: #0673f1;
+    background-color: $adi-primary;
     position: absolute;
     top: 0;
     right: 0;

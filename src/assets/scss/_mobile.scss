@@ -41,11 +41,11 @@
 .carousel .control-dots .dot {
     height: 16px !important;
     width: 16px !important;
-    border: 1px solid #006ae3 !important;
+    border: 1px solid $adi-primary !important;
     opacity: 1 !important;
 }
 
 // Styles Selected Carousel Dot
 .dot.selected {
-    background-color: #026ae1 !important;
+    background-color: $adi-primary !important;
 }
