@@ -4,6 +4,7 @@ import { Pulser } from './components/Pulser';
 import { ProductCard } from './components/ProductCard';
 import { PRODUCT_CARDS, PULSE_DOTS } from './data';
 import { MobileCarousel } from './components/MobileCarousel';
+import debounce from 'lodash/debounce';
 
 function HeroImage() {
     const [card, setCard]: any = useState({
@@ -35,6 +36,15 @@ function HeroImage() {
         setCard({ ...card, [id]: !card[id] });
     };
 
+    const hideAllCards = () => {
+        const clonedCardState = { ...card };
+        for (let c in clonedCardState) {
+            card[c] = false;
+        }
+        console.table(clonedCardState);
+        setCard({ ...clonedCardState });
+    };
+
     // Hides Cards After 3 Seconds
     useEffect(() => {
         const timer = setInterval(function () {
@@ -42,6 +52,16 @@ function HeroImage() {
         }, 5500);
 
         return () => clearInterval(timer);
+    }, []);
+
+    // Hides All Cards On Window Resize
+    useEffect(() => {
+        const onResize = debounce(hideAllCards, 300);
+        window.addEventListener('resize', onResize);
+
+        return () => {
+            window.removeEventListener('resize', onResize);
+        };
     }, []);
 
     return (

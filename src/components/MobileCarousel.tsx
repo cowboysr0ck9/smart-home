@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { PRODUCT_CARDS } from '../data';
 import { ProductCard } from './ProductCard';
 import { Pulser } from './Pulser';
+import debounce from 'lodash/debounce';
 
 export const MobileCarousel = () => {
     const [card, setCard]: any = useState({
@@ -33,12 +34,22 @@ export const MobileCarousel = () => {
     };
 
     const hideAllCards = () => {
-        const clonedCardState = Object.assign({}, card);
+        const clonedCardState = { ...card };
         for (let c in clonedCardState) {
             card[c] = false;
         }
         setCard({ ...clonedCardState });
     };
+
+    // Hides All Cards On Window Resize
+    useEffect(() => {
+        const onResize = debounce(hideAllCards, 300);
+        window.addEventListener('resize', onResize);
+
+        return () => {
+            window.removeEventListener('resize', onResize);
+        };
+    }, []);
 
     return (
         <>
