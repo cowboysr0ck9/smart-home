@@ -41,7 +41,6 @@ function HeroImage() {
         for (let c in clonedCardState) {
             card[c] = false;
         }
-        console.table(clonedCardState);
         setCard({ ...clonedCardState });
     };
 
