@@ -2,221 +2,64 @@
 
 // SaSS Utility: Centers ProductCard on screen
 @mixin center-card-mobile {
+    top: 40px;
     left: 50%;
     margin-left: -155px;
 }
 
 @media screen and (max-width: 500px) {
     #spotlightLeftZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
     #tvSpeakerZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #tvDeviceZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #tvThermostatZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #bedroomLightZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #bedroomTableZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #spotlightRightZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #outsideMotionSensorLeftCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #kitchenTvZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #doorKeypadZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #doorLockZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #garageWaterTankZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #garageScreenZoneCard {
-        top: 36px;
         @include center-card-mobile();
     }
 
     #outsideMotionSensorRightCard {
-        top: 36px;
-        @include center-card-mobile();
-    }
-}
-
-// Mobile L Card Locations
-@media screen and (max-width: 425px) {
-    #spotlightLeftZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-    #tvSpeakerZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #tvDeviceZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #tvThermostatZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #bedroomLightZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #bedroomTableZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #spotlightRightZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #outsideMotionSensorLeftCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #kitchenTvZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #doorKeypadZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #doorLockZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #garageWaterTankZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #garageScreenZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #outsideMotionSensorRightCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-}
-
-// Mobile S Card Locations
-@media screen and (max-width: 320px) {
-    #spotlightLeftZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-    #tvSpeakerZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #tvDeviceZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #tvThermostatZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #bedroomLightZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #bedroomTableZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #spotlightRightZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #outsideMotionSensorLeftCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #kitchenTvZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #doorKeypadZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #doorLockZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #garageWaterTankZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #garageScreenZoneCard {
-        top: 32px;
-        @include center-card-mobile();
-    }
-
-    #outsideMotionSensorRightCard {
-        top: 32px;
         @include center-card-mobile();
     }
 }
