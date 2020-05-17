@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7795bb21c5a652c4ec7614a2df99c1c",
+    "revision": "51d8ceef8f120cdff000cd9f87c1afd6",
     "url": "/adi-global/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adi-global/static/css/2.43c0252a.chunk.css"
   },
   {
-    "revision": "2c4f278d49589344a986",
-    "url": "/adi-global/static/css/main.d8a0a36b.chunk.css"
+    "revision": "3151245f215763bdd002",
+    "url": "/adi-global/static/css/main.a78909b7.chunk.css"
   },
   {
     "revision": "622a5273a7243e1b0e97",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adi-global/static/js/2.22708ec8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c4f278d49589344a986",
+    "revision": "3151245f215763bdd002",
     "url": "/adi-global/static/js/main.85a07d55.chunk.js"
   },
   {
