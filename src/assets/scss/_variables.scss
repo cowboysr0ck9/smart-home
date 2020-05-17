@@ -321,16 +321,23 @@ svg.pulse-svg .third-circle {
 
 @media screen and (max-width: 1024px) {
     .adi-hero-lead--copy-holder {
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: hsla(0, 0%, 100%, 0.9);
         z-index: 3;
         padding: 1rem;
         border-radius: 0.25rem;
         left: 4%;
         top: 320px;
-        transition: ease-in-out 0.3s;
+        transition: 0.3s ease-in-out;
     }
+
+    .adi-hero-lead--copy-holder {
+        width: 368px;
+    }
+
     .js-d-none {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 1s, opacity 1s linear;
     }
 }
 
