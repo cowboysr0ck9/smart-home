@@ -290,9 +290,9 @@ svg.pulse-svg .third-circle {
 .adi-hero-lead--copy-holder {
     display: block;
     position: absolute;
-    width: 320px;
-    left: 24px;
-    top: 318px;
+    width: 325px;
+    left: 8px;
+    top: 337px;
 }
 
 .adi-hero-lead--copy-title {
@@ -301,22 +301,26 @@ svg.pulse-svg .third-circle {
     font-weight: 900;
     letter-spacing: 0;
     line-height: 36px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 .adi-hero-lead--copy-tagline {
     color: #666666;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 24px;
-    margin-bottom: 8px;
+    line-height: 22px;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .adi-hero-lead--copy-text {
     color: #666666;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 20px;
 }
 
 @media screen and (max-width: 1024px) {
