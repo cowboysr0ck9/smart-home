@@ -49,3 +49,17 @@
 .dot.selected {
     background-color: $adi-primary !important;
 }
+
+.carousel .control-dots .dot {
+    transition: opacity 0.25s ease-in;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    box-shadow: none;
+    background: #fff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+}
