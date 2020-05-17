@@ -216,6 +216,11 @@ $adi-white: #fff;
     cursor: pointer;
 }
 
+.circle {
+    stroke: #0673f1;
+    stroke-width: 8px;
+}
+
 /* pulse in SVG */
 svg.pulse-svg {
     overflow: visible;
@@ -223,7 +228,7 @@ svg.pulse-svg {
 svg.pulse-svg .first-circle,
 svg.pulse-svg .second-circle,
 svg.pulse-svg .third-circle {
-    fill: $adi-primary;
+    fill: transparent;
     transform: scale(0.5);
     transform-origin: center center;
     animation: pulse-me 3s linear infinite;
@@ -273,7 +278,7 @@ svg.pulse-svg .third-circle {
         opacity: 0.25;
     }
     70% {
-        opacity: 0.09;
+        opacity: 0.15;
     }
     100% {
         transform: scale(5);

@@ -6,8 +6,8 @@ export const Pulser = () => {
         <>
             <svg
                 className="pulse-svg"
-                width="8px"
-                height="8px"
+                width="6px"
+                height="6px"
                 viewBox="0 0 50 50"
                 version="1.1"
             >
