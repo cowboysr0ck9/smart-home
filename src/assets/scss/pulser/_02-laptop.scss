@@ -1,72 +1,72 @@
 // Laptop Pulse Locations
 @media screen and (max-width: 1024px) {
     #spotlightLeftZone {
-        top: 213px;
+        top: calc(213px - 66px);
         left: 7px;
     }
 
     #tvSpeakerZone {
-        top: 348px;
+        top: calc(348px - 66px);
         left: 151px;
     }
 
     #tvDeviceZone {
-        top: 282px;
+        top: calc(282px - 66px);
         left: 196px;
     }
 
     #tvThermostatZone {
-        top: 294px;
+        top: calc(294px - 66px);
         left: 324px;
     }
 
     #bedroomLightZone {
-        top: 312px;
+        top: calc(312px - 66px);
         left: 515px;
     }
 
     #bedroomTableZone {
-        top: 346px;
+        top: calc(346px - 66px);
         left: 680px;
     }
 
     #spotlightRightZone {
-        top: 215px;
+        top: calc(215px - 66px);
         left: 814px;
     }
 
     #outsideMotionSensorLeft {
-        top: 482px;
+        top: calc(482px - 66px);
         left: 26px;
     }
 
     #kitchenTvZone {
-        top: 538px;
+        top: calc(538px - 66px);
         left: 150px;
     }
 
     #doorKeypadZone {
-        top: 530px;
+        top: calc(530px - 66px);
         left: 362px;
     }
 
     #doorLockZone {
-        top: 536px;
+        top: calc(536px - 66px);
         left: 390px;
     }
 
     #garageWaterTankZone {
-        top: 512px;
+        top: calc(512px - 66px);
         left: 871px;
     }
 
     #garageScreenZone {
-        top: 514px;
+        top: calc(514px - 66px);
         left: 919px;
     }
 
     #outsideMotionSensorRight {
-        top: 482px;
+        top: calc(482px - 66px);
         left: 956px;
     }
 }
