@@ -205,7 +205,7 @@ $adi-white: #fff;
 }
 
 .adi-hero-card--shop-more-link:hover {
-    color: $adi-white;
+    color: $adi-white !important;
     background-color: #133dac;
     border: 2px solid #004da6;
 }

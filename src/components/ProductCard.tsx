@@ -22,7 +22,12 @@ export const ProductCard = ({
                 )}
 
                 <div className="adi-hero-card--btn-close" onClick={onClose}>
-                    <img src={CloseIcon} alt={'Close Button'} />
+                    <img
+                        src={
+                            'https://cdn.qa.adiglobaldistribution.us/userfile-na/ReactJS/static/media/times-circle-regular.7da18975.svg'
+                        }
+                        alt={'Close Button'}
+                    />
                 </div>
                 <div className="adi-hero-card--img-holder">
                     <img
