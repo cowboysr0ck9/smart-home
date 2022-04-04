@@ -5,6 +5,7 @@ import { ProductCard } from './components/ProductCard';
 import { PRODUCT_CARDS, PULSE_DOTS } from './data';
 import { MobileCarousel } from './components/MobileCarousel';
 import debounce from 'lodash/debounce';
+import { SmartHomeModal } from './components/SmartHomeModal';
 
 function HeroImage() {
     const [card, setCard]: any = useState({
@@ -23,6 +24,8 @@ function HeroImage() {
         garageScreenZone: false,
         outsideMotionSensorRight: false,
     });
+
+    const [isModalOpen, setIsModalOpen]: any = useState<Boolean>(true);
 
     const [heroCardDisplay, setHeroCardDisplay]: any = useState(true);
 
@@ -45,13 +48,13 @@ function HeroImage() {
     };
 
     // Hides Cards After 3 Seconds
-    useEffect(() => {
-        const timer = setInterval(function () {
-            setHeroCardDisplay(false);
-        }, 5500);
+    // useEffect(() => {
+    //     const timer = setInterval(function () {
+    //         setHeroCardDisplay(false);
+    //     }, 5500);
 
-        return () => clearInterval(timer);
-    }, []);
+    //     return () => clearInterval(timer);
+    // }, []);
 
     // Hides All Cards On Window Resize
     useEffect(() => {
@@ -61,31 +64,29 @@ function HeroImage() {
         return () => {
             window.removeEventListener('resize', onResize);
         };
+    }, [hideAllCards]);
+
+    useEffect(() => {
+        const timer = setInterval(function () {
+            setIsModalOpen(false);
+        }, 5000);
+
+        return () => clearInterval(timer);
     }, []);
 
     return (
         <>
             <div id="homeMap">
+                <SmartHomeModal
+                    isVisible={isModalOpen}
+                    handleModalOnClose={() => setIsModalOpen(false)}
+                />
+
                 <div
                     className={`adi-hero-lead--copy-holder ${
                         heroCardDisplay ? '' : 'js-d-none'
                     }`}
-                >
-                    <h2 className="adi-hero-lead--copy-title">
-                        Design the Ultimate<br></br>Connected Home.
-                    </h2>
-                    <p className="adi-hero-lead--copy-tagline">
-                        Become your customers’ No. 1 advisor on all things smart
-                        home
-                    </p>
-                    <p className="adi-hero-lead--copy-text">
-                        Explore how you can add smart home devices to your
-                        installs and customize set up to give your customers the
-                        technology they need for a unique, personalized and
-                        secure home experience
-                    </p>
-                </div>
-
+                ></div>
                 <ul className="adi--card-list">
                     {PRODUCT_CARDS.map((c) => {
                         const {
