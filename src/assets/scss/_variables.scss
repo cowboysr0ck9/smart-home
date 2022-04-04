@@ -28,12 +28,12 @@ $adi-white: #fff;
 #homeMap {
     position: relative;
     display: block;
-    background-image: url('../images/smart-home/ADI-Smart-1600.jpg');
+    background-image: url('../images/smart-home/smart-home-hero-1600.jpg');
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 552px;
-    width: 1280px;
+    height: 781px;
+    width: 1600px;
     margin: 0 auto;
     background-color: $adi-white;
 }
@@ -291,56 +291,7 @@ svg.pulse-svg .third-circle {
     }
 }
 
-// Main Hero Copy Text
-.adi-hero-lead--copy-holder {
-    display: block;
-    position: absolute;
-    width: 325px;
-    left: 14px;
-    top: 207px;
-}
-
-.adi-hero-lead--copy-title {
-    color: #666666;
-    font-size: 34px;
-    font-weight: 900;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-bottom: 6px;
-}
-.adi-hero-lead--copy-tagline {
-    color: #666666;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 22px;
-    margin-bottom: 0;
-}
-
-.adi-hero-lead--copy-text {
-    color: #666666;
-    font-size: 16px;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 20px;
-}
-
 @media screen and (max-width: 1024px) {
-    .adi-hero-lead--copy-holder {
-        background-color: hsla(0, 0%, 100%, 0.9);
-        z-index: 3;
-        padding: 1rem;
-        border-radius: 0.25rem;
-        left: 4%;
-        top: 320px;
-        transition: 0.3s ease-in-out;
-    }
-
-    .adi-hero-lead--copy-holder {
-        top: 200px;
-        width: 368px;
-    }
-
     // https://stackoverflow.com/questions/15907079/css3-transition-fade-out-effect
     .js-d-none {
         visibility: hidden;
