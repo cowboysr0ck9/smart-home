@@ -6,6 +6,7 @@ import { PRODUCT_CARDS, PULSE_DOTS } from './data';
 import { MobileCarousel } from './components/MobileCarousel';
 import debounce from 'lodash/debounce';
 import { SmartHomeModal } from './components/SmartHomeModal';
+import { SecondaryModal } from './components/SecondaryModal';
 
 function HeroImage() {
     const [card, setCard]: any = useState({
@@ -27,7 +28,7 @@ function HeroImage() {
 
     const [isModalOpen, setIsModalOpen]: any = useState<Boolean>(true);
 
-    const [heroCardDisplay, setHeroCardDisplay]: any = useState(true);
+    const [heroCardDisplay]: any = useState(true);
 
     const toggle = (id: string) => {
         const clonedCardState = Object.assign({}, card);
@@ -39,6 +40,7 @@ function HeroImage() {
         setCard({ ...card, [id]: !card[id] });
     };
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const hideAllCards = () => {
         const clonedCardState = { ...card };
         for (let c in clonedCardState) {
@@ -46,15 +48,6 @@ function HeroImage() {
         }
         setCard({ ...clonedCardState });
     };
-
-    // Hides Cards After 3 Seconds
-    // useEffect(() => {
-    //     const timer = setInterval(function () {
-    //         setHeroCardDisplay(false);
-    //     }, 5500);
-
-    //     return () => clearInterval(timer);
-    // }, []);
 
     // Hides All Cards On Window Resize
     useEffect(() => {
@@ -81,6 +74,8 @@ function HeroImage() {
                     isVisible={isModalOpen}
                     handleModalOnClose={() => setIsModalOpen(false)}
                 />
+
+                <SecondaryModal />
 
                 <div
                     className={`adi-hero-lead--copy-holder ${

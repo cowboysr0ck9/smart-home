@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { PRODUCT_CARDS } from '../data';
 import { ProductCard } from './ProductCard';
@@ -33,13 +33,13 @@ export const MobileCarousel = () => {
         setCard({ ...card, [id]: !card[id] });
     };
 
-    const hideAllCards = () => {
+    const hideAllCards = useCallback(() => {
         const clonedCardState = { ...card };
         for (let c in clonedCardState) {
             card[c] = false;
         }
         setCard({ ...clonedCardState });
-    };
+    }, [card]);
 
     // Hides All Cards On Window Resize
     useEffect(() => {
@@ -49,7 +49,7 @@ export const MobileCarousel = () => {
         return () => {
             window.removeEventListener('resize', onResize);
         };
-    }, []);
+    }, [hideAllCards]);
 
     return (
         <>

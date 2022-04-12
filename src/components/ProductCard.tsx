@@ -20,37 +20,41 @@ export const ProductCard = ({
                 {arrowDirection && (
                     <span className={`card-arrow--${arrowDirection}`}></span>
                 )}
+                <span className="adi-hero-card-inner">
+                    <div className="adi-hero-card--btn-close" onClick={onClose}>
+                        <img src={CloseIcon} alt={'Close Button'} />
+                    </div>
+                    <div className="adi-hero-card--img-holder">
+                        <img
+                            src={productImage}
+                            className="adi-hero-card--img"
+                            alt={productImageAltText}
+                        />
+                    </div>
 
-                <div className="adi-hero-card--btn-close" onClick={onClose}>
-                    <img src={CloseIcon} alt={'Close Button'} />
-                </div>
-                <div className="adi-hero-card--img-holder">
-                    <img
-                        src={productImage}
-                        className="adi-hero-card--img"
-                        alt={productImageAltText}
-                    />
-                </div>
+                    <div className="adi-hero-card--product-meta">
+                        <h6 className="adi-hero-card--product-meta-name">
+                            {productMetaName}
+                        </h6>
+                        <a
+                            className="adi-hero-card--product-meta-link"
+                            href={productMetaLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {productMetaLinkText}
+                        </a>
+                    </div>
+                    <div className="adi-hero-card--product-copy">
+                        <h4 className="adi-hero-card--product-copy-title">
+                            {title}
+                        </h4>
+                        <p className="adi-hero-card--product-copy-text">
+                            {copy}
+                        </p>
+                    </div>
+                </span>
 
-                <div className="adi-hero-card--product-meta">
-                    <h6 className="adi-hero-card--product-meta-name">
-                        {productMetaName}
-                    </h6>
-                    <a
-                        className="adi-hero-card--product-meta-link"
-                        href={productMetaLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {productMetaLinkText}
-                    </a>
-                </div>
-                <div className="adi-hero-card--product-copy">
-                    <h4 className="adi-hero-card--product-copy-title">
-                        {title}
-                    </h4>
-                    <p className="adi-hero-card--product-copy-text">{copy}</p>
-                </div>
                 <div className="adi-hero-card--shop-more">
                     <a
                         href={shopMoreBtnLink}

@@ -14,7 +14,7 @@ export const SmartHomeModal = ({
     const [isInternalModalOpen, setIsInternalModalOpen] =
         useState<Boolean>(false);
 
-    return isInternalModalOpen ? (
+    return isInternalModalOpen || !isVisible ? (
         <></>
     ) : (
         <div
