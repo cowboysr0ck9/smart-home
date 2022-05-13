@@ -28,7 +28,7 @@ $adi-white: #fff;
 #homeMap {
     position: relative;
     display: block;
-    background-image: url('../images/smart-home/smart-home-hero-1600.jpg');
+    background-image: url('../images/smart-home/Smart-Home-Hero-1600.jpg');
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -43,10 +43,10 @@ $adi-white: #fff;
     #homeMap {
         position: relative;
         display: block;
-        background-image: url('../images/smart-home/ADI-smart-1024.jpg');
+        background-image: url('../images/smart-home/Smart-Home-Hero-1024.jpg');
         background-position: 80% bottom;
         background-repeat: no-repeat;
-        height: 618px;
+        height: 500px;
         width: 1024px;
     }
 }
@@ -56,10 +56,10 @@ $adi-white: #fff;
     #homeMap {
         position: relative;
         display: block;
-        background-image: url('../images/smart-home/ADI-Smart-768.jpg');
+        background-image: url('../images/smart-home/Smart-Home-Hero-768.jpg');
         background-position: 80% bottom;
         background-repeat: no-repeat;
-        height: 476px;
+        height: 375px;
         width: 768px;
     }
 }
@@ -134,8 +134,13 @@ $adi-white: #fff;
 .adi-hero-card-inner {
     padding: 16px 16px 8px 16px;
 }
+
 .secondary-modal-container {
     width: 319px;
+    position: absolute;
+    top: 232px;
+    left: 600px;
+    z-index: 10;
     margin: 0 auto;
     height: 196px;
     background-image: url('../images/modal-dark-card.svg');

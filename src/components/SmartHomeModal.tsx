@@ -10,6 +10,7 @@ import ModalCloseIcon from '../assets/images/smart-home/overlay-close.svg';
 export const SmartHomeModal = ({
     handleModalOnClose,
     isVisible,
+    handleOnTranstionEnd,
 }: ISmartHomeModalProps) => {
     const [isInternalModalOpen, setIsInternalModalOpen] =
         useState<Boolean>(false);
@@ -18,9 +19,10 @@ export const SmartHomeModal = ({
         <></>
     ) : (
         <div
-            onTransitionEnd={(e: React.TransitionEvent) =>
-                setIsInternalModalOpen(true)
-            }
+            onTransitionEnd={(e: React.TransitionEvent) => {
+                setIsInternalModalOpen(true);
+                handleOnTranstionEnd();
+            }}
             className={`smart-home_overlay-container ${
                 isVisible ? 'fadeIn' : 'fadeOut'
             }
@@ -82,5 +84,6 @@ export const SmartHomeModal = ({
 
 interface ISmartHomeModalProps {
     handleModalOnClose: () => void;
+    handleOnTranstionEnd: () => void;
     isVisible: boolean;
 }

@@ -27,7 +27,8 @@ function HeroImage() {
     });
 
     const [isModalOpen, setIsModalOpen]: any = useState<Boolean>(true);
-
+    const [isSecondaryModalOpen, setIsSecondaryModalOpen]: any =
+        useState<Boolean>(false);
     const [heroCardDisplay]: any = useState(true);
 
     const toggle = (id: string) => {
@@ -72,10 +73,18 @@ function HeroImage() {
             <div id="homeMap">
                 <SmartHomeModal
                     isVisible={isModalOpen}
-                    handleModalOnClose={() => setIsModalOpen(false)}
+                    handleOnTranstionEnd={() => {
+                        setIsSecondaryModalOpen(true);
+                    }}
+                    handleModalOnClose={() => {
+                        setIsModalOpen(false);
+                    }}
                 />
 
-                <SecondaryModal />
+                <SecondaryModal
+                    handleModalOnClose={() => setIsSecondaryModalOpen(false)}
+                    isVisible={isSecondaryModalOpen}
+                />
 
                 <div
                     className={`adi-hero-lead--copy-holder ${
