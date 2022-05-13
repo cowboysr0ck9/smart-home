@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69d03f3271e0086cff84888f1cf2c892",
+    "revision": "53241a4145e1a7d6fa66bb0deb7cc563",
     "url": "/smart-home/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smart-home/static/css/2.43c0252a.chunk.css"
   },
   {
-    "revision": "f464509165e8a67a6e12",
-    "url": "/smart-home/static/css/main.ce3d9077.chunk.css"
+    "revision": "6322e1b2bd8b8c0eced7",
+    "url": "/smart-home/static/css/main.3d969731.chunk.css"
   },
   {
     "revision": "b50959118146bb2cf671",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smart-home/static/js/2.6c8922ea.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f464509165e8a67a6e12",
-    "url": "/smart-home/static/js/main.96528af1.chunk.js"
+    "revision": "6322e1b2bd8b8c0eced7",
+    "url": "/smart-home/static/js/main.9df06cf5.chunk.js"
   },
   {
     "revision": "b7062e6748807dc36dc4",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0689e5f5553b106eda64042946c430e",
     "url": "/smart-home/static/media/mobile-roof.e0689e5f.jpg"
+  },
+  {
+    "revision": "abef1d1c2c1fc302c84e6cb1db21e652",
+    "url": "/smart-home/static/media/modal-dark-card.abef1d1c.svg"
   },
   {
     "revision": "02aac91d1413731bc599620c80ef5bfb",

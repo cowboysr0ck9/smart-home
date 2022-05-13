@@ -6,9 +6,9 @@ export const Pulser = () => {
         <>
             <svg
                 className="pulse-svg"
-                width="6px"
-                height="6px"
-                viewBox="0 0 50 50"
+                width="8px"
+                height="8px"
+                viewBox="0 0 108 108"
                 version="1.1"
             >
                 <circle
@@ -16,30 +16,30 @@ export const Pulser = () => {
                     fill={PULSER_COLOR}
                     stroke={PULSER_COLOR}
                     strokeWidth="3"
-                    cx="25"
-                    cy="25"
-                    r="25"
+                    cx="54"
+                    cy="54"
+                    r="54"
                 ></circle>
                 <circle
                     className="circle second-circle"
                     fill={PULSER_COLOR}
-                    cx="25"
-                    cy="25"
-                    r="25"
+                    cx="54"
+                    cy="54"
+                    r="54"
                 ></circle>
                 <circle
                     className="circle third-circle"
                     fill={PULSER_COLOR}
-                    cx="25"
-                    cy="25"
-                    r="25"
+                    cx="54"
+                    cy="54"
+                    r="54"
                 ></circle>
                 <circle
                     className="circle"
-                    fill="#0673f1"
-                    cx="25"
-                    cy="25"
-                    r="25"
+                    fill={PULSER_COLOR}
+                    cx="54"
+                    cy="54"
+                    r="54"
                 ></circle>
             </svg>
         </>

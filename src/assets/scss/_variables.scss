@@ -123,7 +123,7 @@ $adi-white: #fff;
     position: relative;
     margin: 0 auto;
     z-index: 3;
-    border-radius: 12px;
+    border-radius: 4px;
     will-change: filter;
     text-align: left;
     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
@@ -263,8 +263,8 @@ $adi-white: #fff;
 /* CSS Pulse Animation */
 .pulser {
     position: absolute;
-    width: 48px;
-    height: 48px;
+    width: 54px;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +284,7 @@ svg.pulse-svg .first-circle,
 svg.pulse-svg .second-circle,
 svg.pulse-svg .third-circle {
     fill: transparent;
-    transform: scale(0.5);
+    transform: scale(1);
     transform-origin: center center;
     animation: pulse-me 3s linear infinite;
 }
@@ -306,8 +306,8 @@ svg.pulse-svg .third-circle {
 .pulse-css:before,
 .pulse-css:after {
     content: '';
-    width: 16px;
-    height: 16px;
+    width: 27px;
+    height: 27px;
     border-radius: 8px;
     background-color: $adi-primary;
     position: absolute;
@@ -330,10 +330,10 @@ svg.pulse-svg .third-circle {
         opacity: 0;
     }
     50% {
-        opacity: 0.25;
+        opacity: 0.45;
     }
     70% {
-        opacity: 0.15;
+        opacity: 0.35;
     }
     100% {
         transform: scale(5);
