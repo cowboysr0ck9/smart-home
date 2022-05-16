@@ -67,6 +67,8 @@ export const MobileCarousel = () => {
                         shopMoreBtn,
                         shopMoreBtnLink,
                         title,
+                        gaTag,
+                        roomForMobileCard,
                     } = c;
                     return (
                         <li id={`${id}Card`} key={id} className="p-abs">
@@ -83,6 +85,7 @@ export const MobileCarousel = () => {
                                 shopMoreBtn={shopMoreBtn}
                                 shopMoreBtnLink={shopMoreBtnLink}
                                 title={title}
+                                gaTag=""
                             ></ProductCard>
                         </li>
                     );

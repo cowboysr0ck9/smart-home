@@ -1,10 +1,7 @@
 {
   "files": {
-    "main.css": "/smart-home/static/css/main.7cac6a92.css",
-    "main.js": "/smart-home/static/js/main.14da4516.js",
-    "static/media/Smart-Home-Hero-1024.jpg": "/smart-home/static/media/Smart-Home-Hero-1024.0289eafc9ef5e54fe964.jpg",
-    "static/media/Smart-Home-Hero-768.jpg": "/smart-home/static/media/Smart-Home-Hero-768.64955ef5b2c43d2ae4a5.jpg",
-    "static/media/Smart-Home-Hero-1600.jpg": "/smart-home/static/media/Smart-Home-Hero-1600.0ba9eb49daa377a03c2d.jpg",
+    "main.css": "/smart-home/static/css/main.5028c8a4.css",
+    "main.js": "/smart-home/static/js/main.4e8b0ba9.js",
     "static/media/mobile-living-room.jpg": "/smart-home/static/media/mobile-living-room.c4689a75cefc828168df.jpg",
     "static/media/mobile-kitchen.jpg": "/smart-home/static/media/mobile-kitchen.31bbb3be61334f7b0c94.jpg",
     "static/media/mobile-garage.jpg": "/smart-home/static/media/mobile-garage.22f4a20cc2fa2604d1db.jpg",
@@ -12,18 +9,13 @@
     "static/media/mobile-outdoor.jpg": "/smart-home/static/media/mobile-outdoor.f495ae31063ee0fe1eea.jpg",
     "static/media/mobile-roof.jpg": "/smart-home/static/media/mobile-roof.5bb6a19a87dffcefa4ee.jpg",
     "static/media/mobile-door.jpg": "/smart-home/static/media/mobile-door.2176217ad2c8f0ed32b4.jpg",
-    "static/media/overlay-conserve.svg": "/smart-home/static/media/overlay-conserve.28721762c776cccbda55112c1c48dac1.svg",
-    "static/media/overlay-wifi.svg": "/smart-home/static/media/overlay-wifi.d3132145e07559e64cdfb4ac841ef8e5.svg",
-    "static/media/overlay-shield.svg": "/smart-home/static/media/overlay-shield.9ec1724f80512efedcd3c595d82c9ed2.svg",
-    "static/media/modal-dark-card.svg": "/smart-home/static/media/modal-dark-card.ee9e08df22cda17247b3.svg",
-    "static/media/overlay-close.svg": "/smart-home/static/media/overlay-close.f084e60be0bd086c8914862a9106435d.svg",
     "index.html": "/smart-home/index.html",
     "static/media/times-circle-regular.svg": "/smart-home/static/media/times-circle-regular.9bf9014414c074d1a0aeb78269f883c4.svg",
-    "main.7cac6a92.css.map": "/smart-home/static/css/main.7cac6a92.css.map",
-    "main.14da4516.js.map": "/smart-home/static/js/main.14da4516.js.map"
+    "main.5028c8a4.css.map": "/smart-home/static/css/main.5028c8a4.css.map",
+    "main.4e8b0ba9.js.map": "/smart-home/static/js/main.4e8b0ba9.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cac6a92.css",
-    "static/js/main.14da4516.js"
+    "static/css/main.5028c8a4.css",
+    "static/js/main.4e8b0ba9.js"
   ]
 }

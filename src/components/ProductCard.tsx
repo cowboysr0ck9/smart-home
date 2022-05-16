@@ -13,6 +13,7 @@ export const ProductCard = ({
     shopMoreBtn,
     onClose,
     isOpen,
+    gaTag,
 }: IProductCardProps) => {
     return (
         <span className={`${isOpen ? '' : 'js-card-display'}`}>
@@ -32,19 +33,22 @@ export const ProductCard = ({
                         />
                     </div>
 
-                    <div className="adi-hero-card--product-meta">
-                        <h6 className="adi-hero-card--product-meta-name">
-                            {productMetaName}
-                        </h6>
-                        <a
-                            className="adi-hero-card--product-meta-link"
-                            href={productMetaLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {productMetaLinkText}
-                        </a>
-                    </div>
+                    {productMetaName && productMetaLink && productMetaLinkText && (
+                        <div className="adi-hero-card--product-meta">
+                            <h6 className="adi-hero-card--product-meta-name">
+                                {productMetaName}
+                            </h6>
+                            <a
+                                className="adi-hero-card--product-meta-link"
+                                href={productMetaLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {productMetaLinkText}
+                            </a>
+                        </div>
+                    )}
+
                     <div className="adi-hero-card--product-copy">
                         <h4 className="adi-hero-card--product-copy-title">
                             {title}
@@ -74,15 +78,16 @@ interface IProductCardProps {
     arrowDirection?: ArrowDirection;
     productImage: string;
     productImageAltText: string;
-    productMetaName: string;
-    productMetaLink: string;
-    productMetaLinkText: string;
+    productMetaName: string | null;
+    productMetaLink: string | null;
+    productMetaLinkText: string | null;
     title: string;
     copy: string;
     shopMoreBtnLink: string;
     shopMoreBtn: string;
     onClose: any;
     isOpen: boolean;
+    gaTag: string;
 }
 
 export enum ArrowDirection {

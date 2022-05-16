@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 
 // Component Images
-import ConnectIcon from '../assets/images/smart-home/overlay-wifi.svg';
-import ConserveIcon from '../assets/images/smart-home/overlay-conserve.svg';
-import ProtectIcon from '../assets/images/smart-home/overlay-shield.svg';
-import ModalCloseIcon from '../assets/images/smart-home/overlay-close.svg';
+const ConnectIcon =
+    'https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/overlay-wifi.svg';
+const ConserveIcon =
+    'https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/overlay-conserve.svg';
+const ProtectIcon =
+    'https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/overlay-shield.svg';
+const ModalCloseIcon =
+    'https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/overlay-close.svg';
 
 // Core Component
 export const SmartHomeModal = ({

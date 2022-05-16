@@ -121,6 +121,7 @@ function HeroImage() {
                                     shopMoreBtn={shopMoreBtn}
                                     shopMoreBtnLink={shopMoreBtnLink}
                                     title={title}
+                                    gaTag=""
                                 ></ProductCard>
                             </li>
                         );

@@ -28,7 +28,7 @@ $adi-white: #fff;
 #homeMap {
     position: relative;
     display: block;
-    background-image: url('../images/smart-home/Smart-Home-Hero-1600.jpg');
+    background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-1600-new.jpg');
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@ $adi-white: #fff;
     #homeMap {
         position: relative;
         display: block;
-        background-image: url('../images/smart-home/Smart-Home-Hero-1024.jpg');
+        background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-1024.jpg');
         background-position: 80% bottom;
         background-repeat: no-repeat;
         height: 500px;
@@ -56,7 +56,7 @@ $adi-white: #fff;
     #homeMap {
         position: relative;
         display: block;
-        background-image: url('../images/smart-home/Smart-Home-Hero-768.jpg');
+        background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-768.jpg');
         background-position: 80% bottom;
         background-repeat: no-repeat;
         height: 375px;
@@ -119,7 +119,7 @@ $adi-white: #fff;
     background-color: $adi-white;
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 249px;
     position: relative;
     margin: 0 auto;
     z-index: 3;
@@ -143,23 +143,33 @@ $adi-white: #fff;
     z-index: 10;
     margin: 0 auto;
     height: 196px;
-    background-image: url('../images/modal-dark-card.svg');
+    background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/modal-dark-card.svg');
     padding: 2rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.adi-secondary-modal-text {
+    color: #ffffff;
+    font-size: 1.25rem;
+    letter-spacing: 0;
+    line-height: 27px;
+}
+
 .adi-secondary-modal-button {
-    text-transform: uppercase;
-    width: 190px;
-    height: 46px;
+    margin-top: 0.5rem;
+    border: 3px solid #ffffff;
+    border-radius: 4px;
     background-color: transparent;
-    color: white;
-    border: 2px solid white;
+    padding: 0.5rem 3rem;
     font-size: 16px;
+    color: #ffffff;
     letter-spacing: 2px;
-    text-align: center;
-    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    width: 190px;
 }
 
 .adi-hero-card--dark {
