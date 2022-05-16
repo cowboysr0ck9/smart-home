@@ -1,18 +1,6 @@
 import { ArrowDirection } from "../components/ProductCard";
+import { ADI_ROOM_FILTER, buildCDNPath, IProductCard } from "./productCards";
 
-export enum ADI_ROOM_FILTER {
-  BEDROOM = "BEDROOM",
-  TVROOM = "TVROOM",
-  KITCHEN = "KITCHEN",
-  DOOR = "DOOR",
-  GARAGE = "GARAGE",
-  ROOF = "ROOF",
-  OUTDOOR = "OUTDOOR",
-  NODISPLAYONMOBILE = "NODISPLAYONMOBILE",
-}
-
-export const buildCDNPath = (image: String) =>
-  `https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/cards/${image}.jpg`;
 export const PRODUCT_CARDS: IProductCard[] = [
   {
     id: "spotlightLeftZone",
@@ -249,20 +237,3 @@ export const PRODUCT_CARDS: IProductCard[] = [
     gaTagSku: null,
   },
 ];
-
-export type IProductCard = {
-  id: string;
-  roomForMobileCard: ADI_ROOM_FILTER;
-  arrowDirection: ArrowDirection;
-  productImage: string;
-  productImageAltText: string;
-  productMetaLink: string | null;
-  copy: string;
-  productMetaLinkText: string | null;
-  productMetaName: string | null;
-  shopMoreBtn: string;
-  shopMoreBtnLink: string;
-  title: string;
-  gaTag: string;
-  gaTagSku: string | null;
-};

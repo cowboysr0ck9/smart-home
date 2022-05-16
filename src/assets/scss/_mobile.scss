@@ -1,65 +1,69 @@
 .p-rel {
-    position: relative;
+  position: relative;
 }
 .adi-mobile-image {
-    height: 280px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 // Slider Background Images
 .adi-smart-roof-bg {
-    background-image: url('../images/mobile/mobile-roof.jpg');
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/8-hero-outdoor-cameras-final.jpg");
 }
 
 .adi-smart-bedroom-bg {
-    background-image: url('../images/mobile/mobile-bedroom.jpg');
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/2-hero-bedroom-final.jpg");
 }
 
 .adi-smart-door-bg {
-    background-image: url('../images/mobile/mobile-door.jpg');
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/4-hero-door-final.jpg");
 }
 
 .adi-smart-garage-bg {
-    background-image: url('../images/mobile/mobile-garage.jpg');
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/5-hero-garage-1-final.jpg");
+}
+
+.adi-smart-garage-bg-2 {
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/6-hero-garage-2-final.jpg");
 }
 
 .adi-smart-kitchen-bg {
-    background-image: url('../images/mobile/mobile-kitchen.jpg');
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/3-hero-kitchen-final.jpg");
 }
 
 .adi-smart-livingroom-bg {
-    background-image: url('../images/mobile/mobile-living-room.jpg');
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/1-hero-living-room-final.jpg");
 }
 
 .adi-smart-outdoor-bg {
-    background-image: url('../images/mobile/mobile-outdoor.jpg');
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/7-hero-outdoor-speaker-final.jpg");
 }
 
 // Styles All Carousel Slider Dots
 .carousel .control-dots .dot {
-    height: 16px !important;
-    width: 16px !important;
-    border: 1px solid $adi-primary !important;
-    opacity: 1 !important;
+  height: 16px !important;
+  width: 16px !important;
+  border: 1px solid $adi-primary !important;
+  opacity: 1 !important;
 }
 
 // Styles Selected Carousel Dot
 .dot.selected {
-    background-color: $adi-primary !important;
+  background-color: $adi-primary !important;
 }
 
 .carousel .control-dots .dot {
-    transition: opacity 0.25s ease-in;
-    opacity: 0.3;
-    filter: alpha(opacity=30);
-    box-shadow: none;
-    background: #fff;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 10px;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  box-shadow: none;
+  background: #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
 }

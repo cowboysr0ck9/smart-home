@@ -3,372 +3,375 @@ $adi-primary: #0673f1;
 $adi-white: #fff;
 
 @keyframes pulsate {
-    0% {
-        -webkit-transform: scale(0.1, 0.1);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(1.2, 1.2);
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
 }
 
 .adi--card-list {
-    list-style: none;
+  list-style: none;
 }
 
 .js-card-display {
-    display: none;
-    transition: all 0.3s ease-in-out;
+  display: none;
+  transition: all 0.3s ease-in-out;
 }
 
 #homeMap {
-    position: relative;
-    display: block;
-    background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-1600-new.jpg');
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 781px;
-    width: 1600px;
-    margin: 0 auto;
-    background-color: $adi-white;
+  position: relative;
+  display: block;
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-1600-final.jpg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 781px;
+  width: 1600px;
+  margin: 0 auto;
+  background-color: $adi-white;
 }
 
 /* Laptop */
 @media screen and (max-width: 1024px) {
-    #homeMap {
-        position: relative;
-        display: block;
-        background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-1024.jpg');
-        background-position: 80% bottom;
-        background-repeat: no-repeat;
-        height: 500px;
-        width: 1024px;
-    }
+  #homeMap {
+    position: relative;
+    display: block;
+    background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-1024-final.jpg");
+    background-position: 80% bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 1024px;
+  }
 }
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-    #homeMap {
-        position: relative;
-        display: block;
-        background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-768.jpg');
-        background-position: 80% bottom;
-        background-repeat: no-repeat;
-        height: 375px;
-        width: 768px;
-    }
+  #homeMap {
+    position: relative;
+    display: block;
+    background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/Smart-Home-Hero-768-final.jpg");
+    background-position: 80% bottom;
+    background-repeat: no-repeat;
+    height: 375px;
+    width: 768px;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 500px) {
-    #homeMap {
-        display: none;
-    }
+  #homeMap {
+    display: none;
+  }
 
-    .card-arrow--left {
-        display: none;
-    }
+  .card-arrow--left {
+    display: none;
+  }
 
-    .card-arrow--right {
-        display: none;
-    }
+  .card-arrow--right {
+    display: none;
+  }
 }
 
 .card-arrow--left {
-    height: 18px;
-    width: 18px;
-    background-color: $adi-white;
-    position: absolute;
-    z-index: 19;
-    transform: rotate(45deg);
-    left: -9px;
-    top: 64px;
+  height: 18px;
+  width: 18px;
+  background-color: $adi-white;
+  position: absolute;
+  z-index: 19;
+  transform: rotate(45deg);
+  left: -9px;
+  top: 64px;
 }
 
 .card-arrow--dark {
-    height: 18px;
-    width: 18px;
-    background-color: rgba(0, 0, 0, 0.84);
-    position: absolute;
-    z-index: 2;
-    transform: rotate(45deg);
-    left: -9px;
-    top: 48px;
+  height: 18px;
+  width: 18px;
+  background-color: rgba(0, 0, 0, 0.84);
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg);
+  left: -9px;
+  top: 48px;
 }
 
 .card-arrow--right {
-    height: 18px;
-    width: 18px;
-    background-color: $adi-white;
-    position: absolute;
-    z-index: 19;
-    transform: rotate(45deg);
-    right: -9px;
-    top: 64px;
+  height: 18px;
+  width: 18px;
+  background-color: $adi-white;
+  position: absolute;
+  z-index: 19;
+  transform: rotate(45deg);
+  right: -9px;
+  top: 64px;
 }
 .p-abs {
-    position: absolute;
+  position: absolute;
 }
 
 .adi-hero-card {
-    background-color: $adi-white;
-    display: flex;
-    flex-direction: column;
-    width: 249px;
-    position: relative;
-    margin: 0 auto;
-    z-index: 3;
-    border-radius: 4px;
-    will-change: filter;
-    text-align: left;
-    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
-    /* IE11 Fallback */
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  background-color: $adi-white;
+  display: flex;
+  flex-direction: column;
+  width: 249px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 3;
+  border-radius: 4px;
+  will-change: filter;
+  text-align: left;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
+  /* IE11 Fallback */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
 .adi-hero-card-inner {
-    padding: 16px 16px 8px 16px;
+  padding: 16px 16px 8px 16px;
 }
 
 .secondary-modal-container {
-    width: 319px;
-    position: absolute;
-    top: 232px;
-    left: 600px;
-    z-index: 10;
-    margin: 0 auto;
-    height: 196px;
-    background-image: url('https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/modal-dark-card.svg');
-    padding: 2rem;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 319px;
+  position: absolute;
+  top: 232px;
+  left: 600px;
+  z-index: 10;
+  margin: 0 auto;
+  height: 196px;
+  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/modal-dark-card.svg");
+  padding: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .adi-secondary-modal-text {
-    color: #ffffff;
-    font-size: 1.25rem;
-    letter-spacing: 0;
-    line-height: 27px;
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-bottom: 0.25rem;
 }
 
 .adi-secondary-modal-button {
-    margin-top: 0.5rem;
-    border: 3px solid #ffffff;
-    border-radius: 4px;
-    background-color: transparent;
-    padding: 0.5rem 3rem;
-    font-size: 16px;
-    color: #ffffff;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-    width: 190px;
+  margin-top: 0.5rem;
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 0.5rem 3rem;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  width: 190px;
 }
 
 .adi-hero-card--dark {
-    color: white;
-    height: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  color: white;
+  height: 100%;
+  padding: .5rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .adi-hero-card--btn-close {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  top: -8px;
+  right: -8px;
 }
 
 .adi-hero-card--btn-close img {
-    height: 18px;
-    width: 18px !important;
-    cursor: pointer;
+  height: 18px;
+  width: 18px !important;
+  cursor: pointer;
 }
 
 .adi-hero-card--img-holder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .adi-hero-card--img {
-    /* width: fit-content; */
-    width: 100%;
+  width: 100%;
 }
 
 .adi-hero-card--product-meta {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .adi-hero-card--product-meta-name {
-    color: #061e5a;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    margin: 0;
+  color: #061e5a;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
 }
 
 .adi-hero-card--product-meta-link {
-    color: #061e5a !important;
-    font-size: 12px;
-    text-decoration: underline !important;
-    font-weight: 500;
+  color: #061e5a !important;
+  font-size: 12px;
+  text-decoration: underline !important;
+  font-weight: 500;
 }
 
 .adi-hero-card--product-copy {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .adi-hero-card--product-copy-title {
-    color: #2d2926;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0;
+  color: #2d2926;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
 }
 
 .adi-hero-card--product-copy-text {
-    color: #2d2926;
-    font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 0;
+  color: #2d2926;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
 }
 
 .adi-hero-card--shop-more {
-    margin-top: 0px;
-    padding: 16px;
-    border-radius: 0 0 8px 8px;
-    text-align: center;
-    background-color: #f2f3f5;
+  margin-top: 0px;
+  padding: 16px;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  background-color: #f2f3f5;
 }
 
 .adi-hero-card--shop-more-link {
-    color: #002856;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0;
-    padding: 8px;
-    display: inline-block;
-    border: 2px solid #004da6;
-    border-radius: 4px;
-    width: 100%;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+  color: #002856;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0;
+  padding: 8px;
+  display: inline-block;
+  border: 2px solid #004da6;
+  border-radius: 4px;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .adi-hero-card--shop-more-link:hover {
-    color: $adi-white !important;
-    background-color: #133dac;
-    border: 2px solid #004da6;
+  color: $adi-white !important;
+  background-color: #133dac;
+  border: 2px solid #004da6;
 }
 
 /* CSS Pulse Animation */
 .pulser {
-    position: absolute;
-    width: 54px;
-    height: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .circle {
-    stroke: #0673f1;
-    stroke-width: 8px;
+  stroke: #0673f1;
+  stroke-width: 8px;
 }
 
 /* pulse in SVG */
 svg.pulse-svg {
-    overflow: visible;
+  overflow: visible;
 }
 svg.pulse-svg .first-circle,
 svg.pulse-svg .second-circle,
 svg.pulse-svg .third-circle {
-    fill: transparent;
-    transform: scale(1);
-    transform-origin: center center;
-    animation: pulse-me 3s linear infinite;
+  fill: transparent;
+  transform: scale(1);
+  transform-origin: center center;
+  animation: pulse-me 3s linear infinite;
 }
 svg.pulse-svg .second-circle {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 svg.pulse-svg .third-circle {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 /* pulse in CSS */
 .pulse-css {
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    background: $adi-primary;
-    position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: $adi-primary;
+  position: relative;
 }
 .pulse-css:before,
 .pulse-css:after {
-    content: '';
-    width: 27px;
-    height: 27px;
-    border-radius: 8px;
-    background-color: $adi-primary;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    transform: scale(0.5);
-    transform-origin: center center;
-    animation: pulse-me 3s linear infinite;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-radius: 8px;
+  background-color: $adi-primary;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform: scale(0.5);
+  transform-origin: center center;
+  animation: pulse-me 3s linear infinite;
 }
 .pulse-css:after {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 @keyframes pulse-me {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.45;
-    }
-    70% {
-        opacity: 0.35;
-    }
-    100% {
-        transform: scale(5);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.45;
+  }
+  70% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    // https://stackoverflow.com/questions/15907079/css3-transition-fade-out-effect
-    .js-d-none {
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s 1s, opacity 1s linear;
-    }
+  // https://stackoverflow.com/questions/15907079/css3-transition-fade-out-effect
+  .js-d-none {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+  }
 }
 
 // Hides Carousel On All Screens Except Mobile 500px
 @media screen and (min-width: 501px) {
-    .mobileHomeMap {
-        display: none;
-        overflow-x: hidden;
-    }
+  .mobileHomeMap {
+    display: none;
+    overflow-x: hidden;
+  }
 }

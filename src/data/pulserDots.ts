@@ -1,6 +1,6 @@
 export const PULSE_DOTS = [
     'spotlightLeftZone',
-    'tvSpeakerZone',
+    // 'tvSpeakerZone',
     'tvDeviceZone',
     'tvThermostatZone',
     'bedroomLightZone',
