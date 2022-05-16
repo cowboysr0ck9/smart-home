@@ -1,72 +1,71 @@
-// Laptop Card Locations
 @media screen and (max-width: 1024px) {
     #spotlightLeftZoneCard {
-        top: calc(168px - 66px);
+        top: 0px;
         left: 70px;
     }
 
     #tvSpeakerZoneCard {
-        top: calc(296px - 66px);
+        top: 118px;
         left: 207px;
     }
 
     #tvDeviceZoneCard {
-        top: calc(228px - 66px);
-        left: 240px;
+        top: 56px;
+        left: 255px;
     }
 
     #tvThermostatZoneCard {
-        top: calc(235px - 66px);
+        top: 71px;
         left: 384px;
     }
 
     #bedroomLightZoneCard {
-        top: calc(262px - 66px);
-        left: 576px;
-    }
-
-    #bedroomTableZoneCard {
-        top: calc(296px - 66px);
-        left: 362px;
-    }
-
-    #spotlightRightZoneCard {
-        top: calc(171px - 66px);
+        top: 80px;
         left: 496px;
     }
 
+    #bedroomTableZoneCard {
+        top: 126px;
+        left: 443px;
+    }
+
+    #spotlightRightZoneCard {
+        top: 10px;
+        left: 556px;
+    }
+
     #outsideMotionSensorLeftCard {
-        top: calc(434px - 66px);
+        top: 251px;
         left: 82px;
     }
 
     #kitchenTvZoneCard {
-        top: calc(491px - 66px);
+        top: 310px;
         left: 206px;
     }
 
     #doorKeypadZoneCard {
-        top: calc(480px - 66px);
+        top: 301px;
         left: 410px;
     }
 
     #doorLockZoneCard {
-        top: calc(490px - 66px);
+        top: 317px;
         left: 444px;
     }
 
     #garageWaterTankZoneCard {
-        top: calc(464px - 66px);
-        left: 548px;
+        top: 280px;
+        left: 258px;
     }
 
     #garageScreenZoneCard {
-        top: calc(466px - 66px);
-        left: 591px;
+        top: 290px;
+        left: 671px;
     }
 
     #outsideMotionSensorRightCard {
-        top: calc(436px - 66px);
-        left: 642px;
+        top: 260px;
+        left: 702px;
     }
 }

@@ -1,4 +1,3 @@
-// Tablet Pulse Locations
 @media screen and (max-width: 768px) {
     #spotlightLeftZone {
         top: calc(322px - 214px);
@@ -6,67 +5,67 @@
     }
 
     #tvSpeakerZone {
-        top: calc(422px - 214px);
+        top: 111px;
         left: 103px;
     }
 
     #tvDeviceZone {
-        top: calc(372px - 214px);
+        top: 63px;
         left: 140px;
     }
 
     #tvThermostatZone {
-        top: calc(380px - 214px);
+        top: 73px;
         left: 233px;
     }
 
     #bedroomLightZone {
-        top: calc(394px - 214px);
-        left: 379px;
+        top: 84px;
+        left: 309px;
     }
 
     #bedroomTableZone {
-        top: calc(420px - 214px);
-        left: 505px;
+        top: 107px;
+        left: 500px;
     }
 
     #spotlightRightZone {
-        top: calc(323px - 214px);
+        top: 17px;
         left: 604px;
     }
 
     #outsideMotionSensorLeft {
-        top: calc(522px - 214px);
+        top: 210px;
         left: 8px;
     }
 
     #kitchenTvZone {
-        top: calc(564px - 214px);
+        top: 253px;
         left: 103px;
     }
 
     #doorKeypadZone {
-        top: calc(558px - 214px);
-        left: 264px;
+        top: 246px;
+        left: 255px;
     }
 
     #doorLockZone {
-        top: calc(564px - 214px);
+        top: 260px;
         left: 286px;
     }
 
     #garageWaterTankZone {
-        top: calc(544px - 214px);
-        left: 644px;
+        top: 240px;
+        left: 364px;
     }
 
     #garageScreenZone {
-        top: calc(546px - 214px);
-        left: 682px;
+        top: 238px;
+        left: 666px;
     }
 
     #outsideMotionSensorRight {
-        top: calc(522px - 214px);
-        left: 711px;
+        top: 212px;
+        left: 706px;
     }
 }
