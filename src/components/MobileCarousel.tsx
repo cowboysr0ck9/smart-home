@@ -49,9 +49,18 @@ export const MobileCarousel = () => {
     setCard({ ...clonedCardState });
   }, [card]);
 
+  const closeAllModals = () => {
+    setIsModalOpen(false);
+    setIsSecondaryModalOpen(false);
+    setisLastModalClosed(true);
+  };
+
   // Hides All Cards On Window Resize
   useEffect(() => {
-    const onResize = debounce(hideAllCards, 300);
+    const onResize = () => {
+      debounce(hideAllCards, 300);
+      debounce(closeAllModals, 300);
+    };
     window.addEventListener("resize", onResize);
 
     return () => {
@@ -59,6 +68,13 @@ export const MobileCarousel = () => {
     };
   }, [hideAllCards]);
 
+  useEffect(() => {
+    const timer = setInterval(function () {
+      setIsModalOpen(false);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
   return (
     <>
       {!isLastModalClosed && (

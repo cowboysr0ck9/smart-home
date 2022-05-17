@@ -60,13 +60,13 @@ function HeroImage() {
     };
   }, [hideAllCards]);
 
-  // useEffect(() => {
-  //   const timer = setInterval(function () {
-  //     setIsModalOpen(false);
-  //   }, 5000);
+  useEffect(() => {
+    const timer = setInterval(function () {
+      setIsModalOpen(false);
+    }, 5000);
 
-  //   return () => clearInterval(timer);
-  // }, []);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <>
