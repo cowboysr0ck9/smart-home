@@ -60,19 +60,20 @@ function HeroImage() {
     };
   }, [hideAllCards]);
 
-  useEffect(() => {
-    const timer = setInterval(function () {
-      setIsModalOpen(false);
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setInterval(function () {
+  //     setIsModalOpen(false);
+  //   }, 5000);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   return (
     <>
       <div id="homeMap">
         <SmartHomeModal
           isVisible={isModalOpen}
+          isMobile={false}
           handleOnTranstionEnd={() => {
             setIsSecondaryModalOpen(true);
           }}
@@ -80,11 +81,13 @@ function HeroImage() {
             setIsModalOpen(false);
           }}
         />
-
-        <SecondaryModal
-          handleModalOnClose={() => setIsSecondaryModalOpen(false)}
-          isVisible={isSecondaryModalOpen}
-        />
+        <div className="secondary-modal-holder">
+          <SecondaryModal
+            isMobile={false}
+            handleModalOnClose={() => setIsSecondaryModalOpen(false)}
+            isVisible={isSecondaryModalOpen}
+          />
+        </div>
 
         <div
           className={`adi-hero-lead--copy-holder ${

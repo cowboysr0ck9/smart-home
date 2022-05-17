@@ -4,8 +4,16 @@ import { PRODUCT_CARDS } from "../data";
 import { ProductCard } from "./ProductCard";
 import { Pulser } from "./Pulser";
 import debounce from "lodash/debounce";
+import { SmartHomeModal } from "./SmartHomeModal";
+import { SecondaryModal } from "./SecondaryModal";
 
 export const MobileCarousel = () => {
+  const [isModalOpen, setIsModalOpen]: any = useState<Boolean>(true);
+  const [isSecondaryModalOpen, setIsSecondaryModalOpen]: any =
+    useState<Boolean>(false);
+  const [isLastModalClosed, setisLastModalClosed]: any =
+    useState<Boolean>(false);
+
   const [card, setCard]: any = useState({
     spotlightLeftZone: false,
     tvSpeakerZone: false,
@@ -53,6 +61,31 @@ export const MobileCarousel = () => {
 
   return (
     <>
+      {!isLastModalClosed && (
+        <div className="mobile-modal-container">
+          <SmartHomeModal
+            isVisible={isModalOpen}
+            handleOnTranstionEnd={() => {
+              setIsSecondaryModalOpen(true);
+            }}
+            handleModalOnClose={() => {
+              setIsModalOpen(false);
+            }}
+            isMobile={true}
+          />
+          <div className="secondary-modal-holder">
+            <SecondaryModal
+              handleModalOnClose={() => {
+                setIsSecondaryModalOpen(false);
+                setisLastModalClosed(true);
+              }}
+              isVisible={isSecondaryModalOpen}
+              isMobile={true}
+            />
+          </div>
+        </div>
+      )}
+
       <ul className="p-rel adi--card-list">
         {PRODUCT_CARDS.map((c) => {
           const {

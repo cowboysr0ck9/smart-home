@@ -135,18 +135,24 @@ $adi-white: #fff;
   padding: 16px 16px 8px 16px;
 }
 
+.secondary-modal-holder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .secondary-modal-container {
-  width: 319px;
-  position: absolute;
-  top: 232px;
-  left: 600px;
-  z-index: 10;
-  margin: 0 auto;
-  height: 196px;
-  background-image: url("https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/modal-dark-card.svg");
-  padding: 2rem;
-  background-size: cover;
+  background-image: url(https://cdn.adiglobaldistribution.us/userfile-na/US/userfiles/smart-home-2/modal-dark-card.svg);
   background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  width: 319px;
+  position: relative;
+  top: -60px;
+  left: -28px;
+  z-index: 10;
 }
 
 .adi-secondary-modal-text {
@@ -176,7 +182,7 @@ $adi-white: #fff;
 .adi-hero-card--dark {
   color: white;
   height: 100%;
-  padding: .5rem 1rem 0 1rem;
+  padding: 0.5rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

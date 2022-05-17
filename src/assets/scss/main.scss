@@ -1,9 +1,10 @@
 // Import Default Carousel CSS
-@import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
+@import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
 // Imports Custom Project Styling
-@import 'variables';
-@import 'body';
-@import 'pulser/pulser.scss';
-@import 'card/cards.scss';
-@import 'mobile';
-@import 'modal/modal.scss';
+@import "variables";
+@import "body";
+@import "pulser/pulser.scss";
+@import "card/cards.scss";
+@import "mobile";
+@import "modal/modal.scss";
+@import "./smart-home-modal.scss";

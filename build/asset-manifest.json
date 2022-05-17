@@ -1,21 +1,13 @@
 {
   "files": {
-    "main.css": "/smart-home/static/css/main.5028c8a4.css",
-    "main.js": "/smart-home/static/js/main.4e8b0ba9.js",
-    "static/media/mobile-living-room.jpg": "/smart-home/static/media/mobile-living-room.c4689a75cefc828168df.jpg",
-    "static/media/mobile-kitchen.jpg": "/smart-home/static/media/mobile-kitchen.31bbb3be61334f7b0c94.jpg",
-    "static/media/mobile-garage.jpg": "/smart-home/static/media/mobile-garage.22f4a20cc2fa2604d1db.jpg",
-    "static/media/mobile-bedroom.jpg": "/smart-home/static/media/mobile-bedroom.9a766d3c977bdd5f40f1.jpg",
-    "static/media/mobile-outdoor.jpg": "/smart-home/static/media/mobile-outdoor.f495ae31063ee0fe1eea.jpg",
-    "static/media/mobile-roof.jpg": "/smart-home/static/media/mobile-roof.5bb6a19a87dffcefa4ee.jpg",
-    "static/media/mobile-door.jpg": "/smart-home/static/media/mobile-door.2176217ad2c8f0ed32b4.jpg",
+    "main.css": "/smart-home/static/css/main.3e982069.css",
+    "main.js": "/smart-home/static/js/main.e4881c1e.js",
     "index.html": "/smart-home/index.html",
-    "static/media/times-circle-regular.svg": "/smart-home/static/media/times-circle-regular.9bf9014414c074d1a0aeb78269f883c4.svg",
-    "main.5028c8a4.css.map": "/smart-home/static/css/main.5028c8a4.css.map",
-    "main.4e8b0ba9.js.map": "/smart-home/static/js/main.4e8b0ba9.js.map"
+    "main.3e982069.css.map": "/smart-home/static/css/main.3e982069.css.map",
+    "main.e4881c1e.js.map": "/smart-home/static/js/main.e4881c1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5028c8a4.css",
-    "static/js/main.4e8b0ba9.js"
+    "static/css/main.3e982069.css",
+    "static/js/main.e4881c1e.js"
   ]
 }
