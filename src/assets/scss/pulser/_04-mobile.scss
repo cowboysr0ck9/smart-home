@@ -72,8 +72,8 @@
 // Mobile L Pulse Locations
 @media screen and (max-width: 425px) {
   #spotlightLeftZone {
-    top: 70px;
-    left: calc(54px - 20px);
+    top: 70px !important;
+    left: 34px !important;
   }
 
   #tvSpeakerZone {
@@ -82,7 +82,7 @@
   }
 
   #tvDeviceZone {
-    top: 40px;
+    top: 60px;
     left: 85px;
   }
 
@@ -93,12 +93,12 @@
 
   #bedroomLightZone {
     top: 102px;
-    left: calc(58px - 20px);
+    left: -5px;
   }
 
   #bedroomTableZone {
-    top: 148px;
-    left: calc(314px - 20px);
+    top: 168px;
+    left: 344px;
   }
 
   #spotlightRightZone {
@@ -112,8 +112,8 @@
   }
 
   #kitchenTvZone {
-    top: 118px;
-    left: calc(172px - 20px);
+    top: 136px;
+    left: 162px;
   }
 
   #doorKeypadZone {
@@ -133,7 +133,7 @@
 
   #garageScreenZone {
     top: 92px;
-    left: calc(339px - 20px);
+    left: 339px;
   }
 
   #outsideMotionSensorRight {
@@ -184,9 +184,10 @@
   }
 
   #kitchenTvZone {
-    top: 116px;
-    left: calc(150px - 20px);
+    top: 130px;
+    left: 136px;
   }
+
   #doorKeypadZone {
     top: 108px;
     left: calc(90px - 20px);

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/smart-home/static/css/main.3e982069.css",
-    "main.js": "/smart-home/static/js/main.e4881c1e.js",
+    "main.css": "/smart-home/static/css/main.e3b48871.css",
+    "main.js": "/smart-home/static/js/main.8e008085.js",
     "index.html": "/smart-home/index.html",
-    "main.3e982069.css.map": "/smart-home/static/css/main.3e982069.css.map",
-    "main.e4881c1e.js.map": "/smart-home/static/js/main.e4881c1e.js.map"
+    "main.e3b48871.css.map": "/smart-home/static/css/main.e3b48871.css.map",
+    "main.8e008085.js.map": "/smart-home/static/js/main.8e008085.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e982069.css",
-    "static/js/main.e4881c1e.js"
+    "static/css/main.e3b48871.css",
+    "static/js/main.8e008085.js"
   ]
 }
