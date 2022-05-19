@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/smart-home/static/css/main.20580629.css",
+    "main.js": "/smart-home/static/js/main.140820ec.js",
+    "index.html": "/smart-home/index.html",
+    "main.20580629.css.map": "/smart-home/static/css/main.20580629.css.map",
+    "main.140820ec.js.map": "/smart-home/static/js/main.140820ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20580629.css",
+    "static/js/main.140820ec.js"
+  ]
+}

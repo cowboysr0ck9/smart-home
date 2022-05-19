@@ -72,8 +72,8 @@
 // Mobile L Pulse Locations
 @media screen and (max-width: 425px) {
   #spotlightLeftZone {
-    top: 70px !important;
-    left: 34px !important;
+    top: 110px !important;
+    left: 50px !important;
   }
 
   #tvSpeakerZone {
@@ -83,7 +83,7 @@
 
   #tvDeviceZone {
     top: 60px;
-    left: 85px;
+    left: 96px;
   }
 
   #tvThermostatZone {
@@ -117,13 +117,13 @@
   }
 
   #doorKeypadZone {
-    top: 108px;
-    left: calc(105px - 20px);
+    top: 120px;
+    left: 85px;
   }
 
   #doorLockZone {
-    top: 118px;
-    left: calc(142px - 20px);
+    top: 148px;
+    left: 143px;
   }
 
   #garageWaterTankZone {
@@ -145,17 +145,18 @@
 // Mobile M Pulse Locations
 @media screen and (max-width: 375px) {
   #spotlightLeftZone {
-    top: 78px !important;
-    left: 25px !important;
+    top: 113px !important;
+    left: 39px !important;
   }
+
   #tvSpeakerZone {
     top: 156px;
     left: calc(82px - 20px);
   }
 
   #tvDeviceZone {
-    top: 48px;
-    left: 59px;
+    top: 65px;
+    left: 80px;
   }
 
   #tvThermostatZone {
@@ -169,7 +170,7 @@
   }
 
   #bedroomTableZone {
-    top: 144px;
+    top: 158px;
     left: 306px;
   }
 
@@ -189,13 +190,13 @@
   }
 
   #doorKeypadZone {
-    top: 108px;
-    left: calc(90px - 20px);
+    top: 121px;
+    left: 73px;
   }
 
   #doorLockZone {
-    top: 118px;
-    left: calc(123px - 20px);
+    top: 140px;
+    left: 121px;
   }
 
   #garageWaterTankZone {
@@ -205,7 +206,7 @@
 
   #garageScreenZone {
     top: 92px;
-    left: calc(294px - 20px);
+    left: 294px;
   }
 
   #outsideMotionSensorRight {
