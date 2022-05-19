@@ -1,4 +1,5 @@
 import React from "react";
+import { IS_FRENCH } from "../constants";
 
 export const SecondaryModal = ({
   handleModalOnClose,
@@ -11,7 +12,9 @@ export const SecondaryModal = ({
     <div className="secondary-modal-container">
       <div className="adi-hero-card--dark">
         <p className="adi-secondary-modal-text">
-          Click on the blue circles to get product details.
+          {IS_FRENCH
+            ? "Cliquez sur les cercles bleus pour les détails du produit."
+            : "Click on the blue circles to get product details."}
         </p>
         <button
           onClick={handleModalOnClose}

@@ -6,6 +6,8 @@ import { Pulser } from "./Pulser";
 import debounce from "lodash/debounce";
 import { SmartHomeModal } from "./SmartHomeModal";
 import { SecondaryModal } from "./SecondaryModal";
+import { CANADA_EN_PRODUCT_CARDS } from "../data/ca-en-product-cards";
+import { CANADA_FR_PRODUCT_CARDS } from "../data/ca-fr-product-cards";
 
 export const MobileCarousel = () => {
   const [isModalOpen, setIsModalOpen]: any = useState<Boolean>(true);

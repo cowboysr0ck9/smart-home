@@ -7,6 +7,8 @@ import { MobileCarousel } from "./components/MobileCarousel";
 import debounce from "lodash/debounce";
 import { SmartHomeModal } from "./components/SmartHomeModal";
 import { SecondaryModal } from "./components/SecondaryModal";
+import { CANADA_EN_PRODUCT_CARDS } from "./data/ca-en-product-cards";
+import { CANADA_FR_PRODUCT_CARDS } from "./data/ca-fr-product-cards";
 
 function HeroImage() {
   const [card, setCard]: any = useState({
