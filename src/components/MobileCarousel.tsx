@@ -105,7 +105,7 @@ export const MobileCarousel = () => {
       )}
 
       <ul className="p-rel adi--card-list">
-        {PRODUCT_CARDS.map((c) => {
+        {CANADA_FR_PRODUCT_CARDS.map((c) => {
           const {
             id,
             arrowDirection,

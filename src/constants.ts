@@ -1,1 +1,1 @@
-export const IS_FRENCH = false;
+export const IS_FRENCH = true;
