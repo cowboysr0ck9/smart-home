@@ -97,7 +97,7 @@ function HeroImage() {
           }`}
         ></div>
         <ul className="adi--card-list">
-          {CANADA_FR_PRODUCT_CARDS.map((c) => {
+          {PRODUCT_CARDS.map((c) => {
             const {
               id,
               arrowDirection,

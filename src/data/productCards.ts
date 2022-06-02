@@ -207,10 +207,10 @@ export const PRODUCT_CARDS: IProductCard[] = [
     copy: `Reduce time spent on lawn care and improve water efficiency by controlling and monitoring watering.`,
     productMetaLinkText: null,
     productMetaName: null,
-    shopMoreBtn: "Smart Sprinkler Controllers",
+    shopMoreBtn: "Shop Smart Sprinkler Controllers",
     shopMoreBtnLink:
       "/Catalog/shopproducts/smart-home/smart-sprinkler-controllers",
-    title: "Shop Smart Sprinkler Controllers",
+    title: "Smart Sprinkler Controllers",
     gaTag: "/smarthome_hotspots_smart-sprinkler",
     gaTagSku: null,
   },
