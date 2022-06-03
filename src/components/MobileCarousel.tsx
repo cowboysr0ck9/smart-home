@@ -73,7 +73,7 @@ export const MobileCarousel = () => {
   useEffect(() => {
     const timer = setInterval(function () {
       setIsModalOpen(false);
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(timer);
   }, []);
@@ -105,7 +105,7 @@ export const MobileCarousel = () => {
       )}
 
       <ul className="p-rel adi--card-list">
-        {PRODUCT_CARDS.map((c) => {
+        {CANADA_FR_PRODUCT_CARDS.map((c) => {
           const {
             id,
             arrowDirection,
